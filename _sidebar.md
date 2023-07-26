@@ -1,0 +1,27 @@
+- **Home**
+  - [Overview](docs/home.md)
+- **Developers**
+  - [Introduction](docs/dev/introduction.md)
+  - [Browse APIs](/docs/dev/browse-api.md)
+  - [Create Applications](docs/dev/applications.md)
+  - [Consume APIs](/docs/dev/consume-api.md)
+  - [Onboard to OAuth2.1](docs/dev/oauth.md)
+- **Publishers**
+  - [Introduction](docs/publisher/introduction.md)
+  - [Create API](docs/publisher/create-api.md)
+  - [Publish API](docs/publisher/publish-api.md)
+  - [Update API](docs/publisher/update-api.md)
+  - [Bridging API](docs/publisher/bridging-apis.md)
+  - [Manage Access To APIs](docs/publisher/manage-access-to-apis.md)
+  - [Making API discoverable](docs/publisher/making-api-discoverable)
+  - [API Versioning](docs/publisher/api-versioning.md)
+  - [API and APP Monitoring](docs/publisher/api-and-app-monitoring.md)
+- **General**
+  - [Trusted Certificate Authorities](docs/general/trusted-certificate-authorities.md)
+  - [Encryption](docs/general/encryption.md)
+- **Monitoring**
+  - [Monitoring dashboards](docs/monitoring/dashboards.md)
+  - [Real-time](docs/monitoring/real-time.md)
+  - [Quarterly and Yearly](docs/monitoring/quarterly-and-yearly.md)
+- **FAQs**
+  - [Scheduled maintenance](docs/faq/general/maintenance-schedule.md)
