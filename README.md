@@ -1,4 +1,4 @@
-# APEX Cloud User unified Doc Repository
+# APEX Cloud Unified Documentation Repository
 
 This is a documentation repository for APEX Cloud, written for Documentation Portal, using [docsify](https://docsify.js.org/#/). You can find out what docsify or markdown extensions are supported [here](https://stg.docs.developer.gov.sg/docs/public/238425294/doc-portal-publisher-guide/#/).
 
