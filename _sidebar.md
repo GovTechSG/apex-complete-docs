@@ -1,27 +1,58 @@
-- **Home**
-  - [Overview](docs/home.md)
-- **Applications**
-  - [Introduction](docs/dev/introduction.md)
-  - [Browse APIs](/docs/dev/browse-api.md)
-  - [Create Applications](docs/dev/applications.md)
-  - [Consume APIs](/docs/dev/consume-api.md)
-  - [Onboard to OAuth2.1](docs/dev/oauth.md)
-- **APIs**
-  - [Introduction](docs/publisher/introduction.md)
-  - [Create API](docs/publisher/create-api.md)
-  - [Publish API](docs/publisher/publish-api.md)
-  - [Update API](docs/publisher/update-api.md)
-  - [Bridging API](docs/publisher/bridging-apis.md)
-  - [Manage Access To APIs](docs/publisher/manage-access-to-apis.md)
-  - [Making API discoverable](docs/publisher/making-api-discoverable)
-  - [API Versioning](docs/publisher/api-versioning.md)
-  - [API and APP Monitoring](docs/publisher/api-and-app-monitoring.md)
-- **General**
-  - [Trusted Certificate Authorities](docs/general/trusted-certificate-authorities.md)
-  - [Encryption](docs/general/encryption.md)
-- **Monitoring**
-  - [Monitoring dashboards](docs/monitoring/dashboards.md)
-  - [Real-time](docs/monitoring/real-time.md)
-  - [Quarterly and Yearly](docs/monitoring/quarterly-and-yearly.md)
-- **FAQs**
-  - [Scheduled maintenance](docs/faq/general/maintenance-schedule.md)
+Overview
+
+- [Introduction](/)
+
+Onboarding to APEX
+
+- [Introduction](/)
+
+Consuming APIs
+
+- [Introduction](/)
+- [Browsing APIs](/)
+- [Requesting access to APIs](/)
+- [Creating applications](/)
+- [Requesting approvals to applications](/)
+- [Generating API Keys](/)
+- [Subscribing applications to APIs](/)
+- [Onboarding applications to OAuth 2.1](/)
+
+Publishing APIs
+
+- [Introduction](/)
+- [Creating APIs](/)
+- [Publishing APIs](/)
+- [Updating APIs](/)
+- [Cross-zone Bridging of APIs](/)
+- [Manage access To APIs](/)
+- [Making APIs discoverable](/)
+- [Versioning APIs](/)
+- [Monitoring APIs](/)
+
+Securing API calls with JWT Authentication
+
+- [Introduction](/)
+- [Understanding JWT](/)
+- [JWT authentication](/)
+- [JWT flow diagrams](/)
+- [Sample code references](/)
+- [JWT Authorization Header Testing](/)
+
+Monitoring APIs
+
+- [Monitoring dashboards](/)
+- [Real-time dashboard](/)
+- [Quarterly and Yearly dashboard](/)
+
+Troubleshooting
+
+- [Introduction](/)
+- [Debugging API requests](/)
+- [Debugging JWT authentications](/)
+- [Debugging network connectivity](/)
+- [Debugging API manager portal issues](/)
+
+General Enquiries / FAQs
+
+- [When will APEX go under scheduled maintenance?](/)
+- [Trusted Certificate Authorities](/)
