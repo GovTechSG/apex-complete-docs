@@ -1,12 +1,12 @@
 - **Home**
   - [Overview](docs/home.md)
-- **Developers**
+- **Applications**
   - [Introduction](docs/dev/introduction.md)
   - [Browse APIs](/docs/dev/browse-api.md)
   - [Create Applications](docs/dev/applications.md)
   - [Consume APIs](/docs/dev/consume-api.md)
   - [Onboard to OAuth2.1](docs/dev/oauth.md)
-- **Publishers**
+- **APIs**
   - [Introduction](docs/publisher/introduction.md)
   - [Create API](docs/publisher/create-api.md)
   - [Publish API](docs/publisher/publish-api.md)
