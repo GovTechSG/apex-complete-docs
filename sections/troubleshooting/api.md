@@ -29,7 +29,7 @@ To debug an API issue using the [Traffic Trace dashboard](#debugging-api-request
 
 Ensure that you have:
 
-- An active [TechPass](docs/onboarding/techpass) account.
+- An active [TechPass](sections/onboarding/techpass) account.
 - Access to your Elastic Cloud deployment.
 
 </details>
@@ -41,7 +41,7 @@ Ensure that you have:
     - **Production:** [go.gov.sg/apex-report](https://go.gov.sg/apex-report)
     - **Staging:** [go.gov.sg/apex-report-stg](https://go.gov.sg/apex-report-stg)
 
-1. Log in with [TechPass](docs/onboarding/techpass). The Elastic Cloud dashboard is displayed.
+1. Log in with [TechPass](sections/onboarding/techpass). The Elastic Cloud dashboard is displayed.
 
 1. From the Spaces menu, select your project space.
 

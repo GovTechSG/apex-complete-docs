@@ -4,15 +4,15 @@
 
 TechPass is an IAM solution that is equipped with SSO. It taps on [Azure Active Directory](https://azure.microsoft.com/en-us/services/active-directory/), which is an enterprise identity service from Microsoft.
 
-It complies with Government Instruction Manual ICT&SS Management (also known as [IM8](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/im8.html)). It utilises popular open standards [OAuth 2.0](https://oauth.net/2/), [OpenID Connect](https://openid.net/connect/), and [Security Assertion Markup Language 2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html) for authentication and authorisation processes.
+It complies with Government Instruction Manual ICT&SS Management (also known as [IM8](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/im8.html)). It utilises popular open standards [OAuth 2.0](https://oauth.net/2/), [OpenID Connect](https://openid.net/connect/), and [Security Assertion Markup Language 2.0](http://sections.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html) for authentication and authorisation processes.
 
 ## Onboard to TechPass
 
-To kickstart the onboarding process for TechPass, follow the documentation guide [here](https://docs.developer.tech.gov.sg/docs/techpass-user-guide/sign-up-and-onboard-to-techpass).
+To kickstart the onboarding process for TechPass, follow the documentation guide [here](https://sections.developer.tech.gov.sg/sections/techpass-user-guide/sign-up-and-onboard-to-techpass).
 
 !> **Important**: In order to access the protected endpoint of the API Manager(s), you will need to **select the option to onboard your Internet device to SEED** during the TechPass onboarding.
 
-You can also view all the available technical documentations for TechPass [here](https://docs.developer.tech.gov.sg/docs?product=TechPass).
+You can also view all the available technical documentations for TechPass [here](https://sections.developer.tech.gov.sg/sections?product=TechPass).
 
 ## Verify your TechPass account
 

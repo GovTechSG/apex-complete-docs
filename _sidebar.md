@@ -1,12 +1,12 @@
 - Overview
-  - [Introduction](docs/home.md)
+  - [Introduction](sections/home.md)
   - [What's new?](/)
 
 - Onboarding to APEX
-  - [Introduction](docs/onboarding/onboarding.md)
-  - [Public Officers via TechPass](/docs/onboarding/techpass.md)
-  - [Non-government Users via Corppass](/docs/onboarding/corppass.md)
-  - [Post-onboarding](docs/onboarding/post-onboarding.md)
+  - [Introduction](sections/onboarding/introduction.md)
+  - [Public Officers via TechPass](sections/onboarding/techpass.md)
+  - [Non-government Users via Corppass](sections/onboarding/corppass.md)
+  - [Post-onboarding](sections/onboarding/post-onboarding.md)
 
 - Consuming APIs
   - [Introduction](/)
@@ -38,17 +38,17 @@
   - [JWT Authorization Header Testing](/)
 
 - Monitoring APIs
-  - [Monitoring dashboards](docs/monitoring/dashboards.md)
-  - [Real-time dashboard](docs/monitoring/real-time-dashboards.md)
-  - [Quarterly and Yearly dashboard](docs/monitoring/quarterly-and-yearly-dashboards.md)
+  - [Monitoring dashboards](sections/monitoring/dashboards.md)
+  - [Real-time dashboard](sections/monitoring/real-time-dashboards.md)
+  - [Quarterly and Yearly dashboard](sections/monitoring/quarterly-and-yearly-dashboards.md)
 
 - Troubleshooting
-  - [Introduction](docs/troubleshooting/troubleshooting.md)
-  - [Debugging API requests](docs/troubleshooting/api.md)
-  - [Debugging JWT authentications](docs/troubleshooting/jwt.md)
-  - [Debugging network connectivity](docs/troubleshooting/network.md)
-  - [Debugging API manager portal issues](docs/troubleshooting/api-manager.md)
+  - [Introduction](sections/troubleshooting/introduction.md)
+  - [Debugging API requests](sections/troubleshooting/api.md)
+  - [Debugging JWT authentications](sections/troubleshooting/jwt.md)
+  - [Debugging network connectivity](sections/troubleshooting/network.md)
+  - [Debugging API manager portal issues](sections/troubleshooting/api-manager.md)
 
 - General Enquiries / FAQs
-  - [Scheduled maintenance](docs/faqs/maintenance.md)
-  - [List of Trusted Certificate Authorities](docs/faqs/trusted-cert-authorities.md)
+  - [Scheduled maintenance](sections/faqs/maintenance.md)
+  - [List of Trusted Certificate Authorities](sections/faqs/trusted-cert-authorities.md)
