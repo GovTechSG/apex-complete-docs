@@ -50,5 +50,5 @@
   - [Debugging API manager portal issues](docs/troubleshooting/api-manager.md)
 
 - General Enquiries / FAQs
-  - [Scheduled maintenance](/)
-  - [Trusted Certificate Authorities](/)
+  - [Scheduled maintenance](docs/faqs/maintenance.md)
+  - [List of Trusted Certificate Authorities](docs/faqs/certs.md)
