@@ -1,6 +1,6 @@
 # APEX Cloud Unified Documentation Repository
 
-This is a documentation repository for APEX Cloud, written for Documentation Portal, using [sectionsify](https://sectionsify.js.org/#/). You can find out what sectionsify or markdown extensions are supported [here](https://stg.sections.developer.gov.sg/sections/public/238425294/doc-portal-publisher-guide/#/).
+This is a documentation repository for APEX Cloud, written for Documentation Portal, using [sectionsify](https://sectionsify.js.org/#/). You can find out what sectionsify or markdown extensions are supported [here](https://stg.docs.developer.gov.sg/sections/public/238425294/doc-portal-publisher-guide/#/).
 
 > The repository is currently in active development and contents will change rapidly.
 

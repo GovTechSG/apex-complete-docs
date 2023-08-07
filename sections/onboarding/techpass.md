@@ -8,11 +8,11 @@ It complies with Government Instruction Manual ICT&SS Management (also known as 
 
 ## Onboard to TechPass
 
-To kickstart the onboarding process for TechPass, follow the documentation guide [here](https://sections.developer.tech.gov.sg/sections/techpass-user-guide/sign-up-and-onboard-to-techpass).
+To kickstart the onboarding process for TechPass, follow the documentation guide [here](https://docs.developer.tech.gov.sg/sections/techpass-user-guide/sign-up-and-onboard-to-techpass).
 
 !> **Important**: In order to access the protected endpoint of the API Manager(s), you will need to **select the option to onboard your Internet device to SEED** during the TechPass onboarding.
 
-You can also view all the available technical documentations for TechPass [here](https://sections.developer.tech.gov.sg/sections?product=TechPass).
+You can also view all the available technical documentations for TechPass [here](https://docs.developer.tech.gov.sg/sections?product=TechPass).
 
 ## Verify your TechPass account
 

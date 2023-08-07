@@ -1,7 +1,5 @@
 # APEX Cloud Onboarding
 
-Welcome to APEX Cloud!
-
 To onboard to APEX Cloud and get access to the APEX Cloud portals, select your user type proceed.
 
 ## APEX Subscription

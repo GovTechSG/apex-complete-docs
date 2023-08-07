@@ -1,6 +1,6 @@
 # Monitoring and logs dashboards
 
-APEX Cloud provides the Elastic ELK using the [StackOps](https://sections.developer.tech.gov.sg/sections/stackops-overview/) monitoring tool. ELK includes pre-made dashboards for reporting and debugging issues.
+APEX Cloud provides the Elastic ELK using the [StackOps](https://docs.developer.tech.gov.sg/sections/stackops-overview/) monitoring tool. ELK includes pre-made dashboards for reporting and debugging issues.
 
 You can use these dashboards to:
 

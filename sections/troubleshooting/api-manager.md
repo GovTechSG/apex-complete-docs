@@ -25,13 +25,13 @@ Once logged in to the desired APEX Cloud API Manager Portal, please switch to th
 
 **Solution:** If you are an existing APEX Cloud consumer, you can email the API publisher and request for access to be given to the organisation which needs to access the API.
 
-For new APEX Cloud consumers, please visit the [APEX Cloud Onboarding Guide](https://sections.developer.tech.gov.sg/sections/apex-cloud-onboarding/) for more information.
+For new APEX Cloud consumers, please visit the [APEX Cloud Onboarding Guide](https://docs.developer.tech.gov.sg/sections/apex-cloud-onboarding/) for more information.
 
 ## Unable to edit the API
 
 **Issue:** An API in a published state cannot be modified. If publishers were to unpublish the API to make any changes to it, the API will lose the API to App relationship. This relationship can only be established again with the help of the consumer.  Without the API to App linkage being re-established,  API calls, which require inbound authentication on APEX Cloud, will fail.
 
-**Solution:** We recommend publishers to create a new API with the needed updates, and then upgrade the original API to the new API version. Publishers can refer to the [Update API](https://sections.developer.tech.gov.sg/sections/apex-cloud-user-guide/sections/publisher/update-api) workflow to make any changes to their API.
+**Solution:** We recommend publishers to create a new API with the needed updates, and then upgrade the original API to the new API version. Publishers can refer to the [Update API](https://docs.developer.tech.gov.sg/sections/apex-cloud-user-guide/sections/publisher/update-api) workflow to make any changes to their API.
 
 ## Missing customised headers
 

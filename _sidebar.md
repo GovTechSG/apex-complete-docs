@@ -19,7 +19,7 @@
   - [Onboarding applications to OAuth 2.1](/)
 
 - Publishing APIs
-  - [Introduction](/)
+  - [Introduction](sections/publishing/introduction.md)
   - [Creating APIs](/)
   - [Publishing APIs](/)
   - [Updating APIs](/)
@@ -30,7 +30,7 @@
   - [Monitoring APIs](/)
 
 - Securing API calls with JWT Authentication
-  - [Introduction](/)
+  - [Introduction](sections/auth/introduction.md)
   - [Understanding JWT](/)
   - [JWT authentication](/)
   - [JWT flow diagrams](/)
