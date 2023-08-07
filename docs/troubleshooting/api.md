@@ -10,7 +10,7 @@ The steps above are all linked to the Correlation ID value. When an API request 
 
 The Traffic Trace Dashboard helps you view and filter the list of the Correlation IDs and the details of each API request. 
 
-![Traffic-trace-dashboard](/_assets/dashboard-traffic-trace.png)
+![Traffic-trace-dashboard](./_assets/dashboard-traffic-trace.png)
 
 The dashboard consists of four panels.
 
@@ -71,7 +71,7 @@ Ensure that you have:
 
 2. Browse through the list of API requests in the Traffic Summary panel, and copy the **Correlation ID** of the problematic request.
 
-    ![copy correlation ID](/./_assets/dashboard-correlationid.png)
+    ![copy correlation ID](./_assets/dashboard-correlationid.png)
 
     > **Note:** You can also hover over the Correlation ID entry and  click the (**+**) icon to filter the results by that value.
 
@@ -81,7 +81,7 @@ Ensure that you have:
 
 1. In the Correlation ID filter, paste the value of the Correlation ID that corresponds to the problematic API request.
 
-    ![paste correlation ID](/./_assets/dashboard-correlationid-filter.png)
+    ![paste correlation ID](./_assets/dashboard-correlationid-filter.png)
 
 1. After filtering by the Correlation ID, debug the request using the **Traffic Details** and **Traffic Trace Root Cause** panels. Proceed to the next sections.
 
@@ -96,7 +96,7 @@ To debug the issue by checking the Traffic Details, follow these steps:
 ### Client to APEX Cloud panel
 
 Use this panel to determine whether an API request is experiencing failure on the Client to APEX Cloud segment of the request (Leg 0).<br><br>
-    ![client-to-apex](/_assets/trafficdetails-clienttoapex.png)
+    ![client-to-apex](./_assets/trafficdetails-clienttoapex.png)
 
 - The **X-Forwarded-For** (**1**) header verifies the Client IP address.
 
@@ -107,7 +107,7 @@ Use this panel to determine whether an API request is experiencing failure on th
 
 - The **HTTP response** (**2**) shows the HTTP response. In the example below, the response shows a `446 Client Error`.
 
-    ![client-to-apex](/_assets/trafficdetails-clienttoapex-error.png)
+    ![client-to-apex](./_assets/trafficdetails-clienttoapex-error.png)
 
 - The **X-CorrelationID** (**3**) header determines that the API is a **Bridging API** if there are two correlation ID values. Bridging APIs can be:
   - Backend-hosted in Intranet and exposed in Internet
@@ -116,7 +116,7 @@ Use this panel to determine whether an API request is experiencing failure on th
 ### APEX Cloud to Endpoint panel
 
 Use this panel to determine whether an API request is experiencing failure on the APEX Cloud to Endpoint segment of the request (Leg 1).<br><br>
-![apex-to-endpoint](/_assets/trafficdetails-apextoendpoint.png)
+![apex-to-endpoint](./_assets/trafficdetails-apextoendpoint.png)
 
 ## View the Traffic Trace Root Cause
 
