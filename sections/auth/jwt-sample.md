@@ -90,7 +90,7 @@ JWKS Endpoint:
 
 These are sample codes to help the Developer in coding for the JWT header. Do note that these are for reference only and not intended for production use.
 
-Start your testing with the hello world API! Refer to [Link](/docs/hello-world/jwt-auth.md) for more information.
+Start your testing with the hello world API! Refer to [Link](sections/auth/jwt-hello-world) for more information.
 
 ### Node JS
 
@@ -251,7 +251,7 @@ public class JwtWithJwkPrivateKey {
      * - hashPayload : Hash the payload with SHA-256
      *
      * For more information, refer to documents JWT Authentication > Generating JWT.
-     * https://docs.developer.tech.gov.sg/docs/apex-cloud-authentication/docs/dev/jwt-auth?id=generating-jwt
+     * https://https://go.gov.sg/apex-generating-jwt
      */
     String jti = UUID.randomUUID().toString();
     String sub = "POST";
@@ -288,7 +288,7 @@ public class JwtWithJwkPrivateKey {
      * }
      * -----------------------------------
      * For quick guide to generate JWK for testing purpose,
-     * refer to https://docs.developer.tech.gov.sg/docs/apex-cloud-authentication/docs/dev/jwt-auth?id=generating-jwks
+     * refer to https://go.gov.sg/apex-generating-jwks
      */
     String jwkString = new String(Files.readAllBytes(Paths.get("path/to/jwk.json")));
     JWK jwk = JWK.parse(jwkString);
@@ -361,7 +361,7 @@ public class Jwt {
          * - hashPayload : Hash the payload with SHA-256
          *
          * For more information, refer to documents JWT Authentication > Generating JWT.
-         * https://docs.developer.tech.gov.sg/docs/apex-cloud-authentication/docs/dev/jwt-auth?id=generating-jwt
+         * https://go.gov.sg/apex-generating-jwt
          */
         String jti = UUID.randomUUID().toString();
         String sub = "POST";

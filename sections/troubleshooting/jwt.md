@@ -42,7 +42,7 @@ If you encounter errors during the JWT authentication process, refer to the tabl
 <details>
 <summary>How do we troubleshoot incorrect data hash (Error 446)?</summary>
 
-Error 446 may mean that your data hash of your body is incorrect. Ensure that your data is [formatted correctly](docs/dev/jwt-auth?id=apex-standardized-json-payload) (generally without spaces and carriage returns/new lines) and do test your hash values with [Hello World APIs](docs/hello-world/jwt-auth?id=sha-256-generator) /helloworld/sha256 with x-apex-returncontent and seeing the return value of x-apex-hash and the content returned.
+Error 446 may mean that your data hash of your body is incorrect. Ensure that your data is [formatted correctly](sections/auth/jwt-auth?#apex-standardized-json-payload) (generally without spaces and carriage returns/new lines) and do test your hash values with [Hello World APIs](sections/auth/jwt-hello-world#sha-256-generator) /helloworld/sha256 with x-apex-returncontent and seeing the return value of x-apex-hash and the content returned.
 
 If you are using SOAP and are still having this error, do contact open a case with APEX.
 </details>
