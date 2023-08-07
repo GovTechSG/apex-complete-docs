@@ -1,6 +1,6 @@
 - Overview
   - [Introduction](sections/home.md)
-  - [What's new?](/)
+  <!-- - [What's new?](/) -->
 
 - Onboarding to APEX
   - [Introduction](sections/onboarding/introduction.md)
