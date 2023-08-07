@@ -1,10 +1,15 @@
 Overview
 
-- [Introduction](/)
+- [Introduction](/home.md)
+- [What's new?](/)
 
 Onboarding to APEX
 
 - [Introduction](/)
+- [Subscription](/)
+- [Public Officers via TechPass](/)
+- [Non-government Users via Corppass](/)
+- [Post-onboarding](/)
 
 Consuming APIs
 
@@ -54,5 +59,5 @@ Troubleshooting
 
 General Enquiries / FAQs
 
-- [When will APEX go under scheduled maintenance?](/)
+- [Scheduled maintenance](/)
 - [Trusted Certificate Authorities](/)
