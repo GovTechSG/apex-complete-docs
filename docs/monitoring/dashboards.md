@@ -39,4 +39,4 @@ See the sections below to know more about these dashboards.
 - [API-Requests Real-Time](docs/monitoring/real-time)
 - [API-Requests Quarterly and Yearly](docs/monitoring/quarterly-and-yearly)
 
-Aside from the monitoring dashboards, you can also view and use the Traffic Trace dashboard to troubleshoot API issues. For more information, refer to the [APEX Cloud Troubleshooting Guide](docs/troubleshooting/introduction).
+Aside from the monitoring dashboards, you can also view and use the Traffic Trace dashboard to troubleshoot API issues. For more information, refer to the [APEX Cloud Troubleshooting Guide](docs/troubleshooting/troubleshooting).

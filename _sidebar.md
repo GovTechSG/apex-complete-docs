@@ -3,10 +3,10 @@
   - [What's new?](/)
 
 - Onboarding to APEX
-  - [Introduction](docs/onboarding/introduction.md)
+  - [Introduction](docs/onboarding/onboarding.md)
   - [Public Officers via TechPass](/docs/onboarding/techpass.md)
   - [Non-government Users via Corppass](/docs/onboarding/corppass.md)
-  - [Post-onboarding](docs/onboarding/next-steps.md)
+  - [Post-onboarding](docs/onboarding/post-onboarding.md)
 
 - Consuming APIs
   - [Introduction](/)
@@ -39,11 +39,11 @@
 
 - Monitoring APIs
   - [Monitoring dashboards](docs/monitoring/dashboards.md)
-  - [Real-time dashboard](docs/monitoring/real-time.md)
-  - [Quarterly and Yearly dashboard](docs/monitoring/quarterly-and-yearly.md)
+  - [Real-time dashboard](docs/monitoring/real-time-dashboards.md)
+  - [Quarterly and Yearly dashboard](docs/monitoring/quarterly-and-yearly-dashboards.md)
 
 - Troubleshooting
-  - [Introduction](docs/troubleshooting/introduction.md)
+  - [Introduction](docs/troubleshooting/troubleshooting.md)
   - [Debugging API requests](docs/troubleshooting/api.md)
   - [Debugging JWT authentications](docs/troubleshooting/jwt.md)
   - [Debugging network connectivity](docs/troubleshooting/network.md)
@@ -51,4 +51,4 @@
 
 - General Enquiries / FAQs
   - [Scheduled maintenance](docs/faqs/maintenance.md)
-  - [List of Trusted Certificate Authorities](docs/faqs/certs.md)
+  - [List of Trusted Certificate Authorities](docs/faqs/trusted-cert-authorities.md)
