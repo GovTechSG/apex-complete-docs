@@ -30,11 +30,11 @@
 
 - Securing API calls with JWT Authentication
   - [Introduction](sections/auth/introduction.md)
-  - [Understanding JWT](/)
-  - [JWT authentication](/)
-  - [JWT flow diagrams](/)
-  - [Sample code references](/)
-  - [JWT Authorization Header Testing](/)
+  - [Understanding JWT](sections/auth/jwt.md)
+  - [Visualizing JWT flow in APEX](sections/auth/jwt-flow.md)
+  - [Using JWT Auth](sections/auth/jwt-auth.md)
+  - [Sample codes for JWT Auth](sections/auth/jwt-sample.md)
+  - [(Hello World!) Testing JWT Auth header](sections/auth/jwt-hello-world.md)
 
 - Monitoring APIs
   - [Monitoring dashboards](sections/monitoring/dashboards.md)
