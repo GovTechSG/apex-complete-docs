@@ -33,6 +33,7 @@
   - [Understanding JWT](sections/auth/jwt.md)
   - [Visualizing JWT flow in APEX](sections/auth/jwt-flow.md)
   - [Using JWT Auth](sections/auth/jwt-auth.md)
+  - [Working with JWKS](sections/auth/jwks.md)
   - [Sample codes for JWT Auth](sections/auth/jwt-sample.md)
   - [(Hello World!) Testing JWT Auth header](sections/auth/jwt-hello-world.md)
 

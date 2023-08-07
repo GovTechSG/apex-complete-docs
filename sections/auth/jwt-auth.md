@@ -26,7 +26,7 @@ Please note that 2 API Keys will be required for a bridging API. The Publisher s
 
 ## Prerequisites-JWKS Endpoint
 
-An introduction to JWK and JWKS can be found [here](docs/dev/jwks-endpoint.md).
+An introduction to JWK and JWKS can be found [here](sections/auth/jwks).
 
 The Developer will have to generate a JSON Web Key (JWK) set for signing their authorization header, of an Elliptical Curve P-256 key set (ES256).
 
@@ -41,27 +41,27 @@ Usually the key/value pairs of "**_use_**", "**_kid_**" will have to be appended
 
 A commerical service such as [auth0](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets#:~:text=The%20JSON%20Web%20Key%20Set,signing%20JWTs%3A%20RS256%20and%20HS256.) may can help with the hosting of the JWKS keys.
 
-Do take note that if JWKS endpoint is specified, the user may need to validate that APEX has sufficient outwards connectivity to the JWKS endpoint and using [valid CA certificate authority](https://docs.developer.tech.gov.sg/docs/apex-cloud-troubleshooting-guide/docs/networking/networking-issues).
+Do take note that if JWKS endpoint is specified, the user may need to validate that [APEX has sufficient outwards connectivity to the JWKS endpoint](sections/troubleshooting/network) and using [valid CA certificate authority](sections/faqs/trusted-cert-authorities).
 
 ## Example of JWKS Endpoint
 
-Please refer [here](docs/dev/jwks-endpoint.md#example-of-jwks-endpoint) for more information.
+Please refer [here](sections/auth/jwks#example-of-jwks-endpoint) for more information.
 
 ## Utilizing JWKS endpoint in the Intranet
 
-Please refer [here](docs/dev/jwks-endpoint.md#utilizing-jwks-endpoint-in-the-intranet) for more information.
+Please refer [here](sections/auth/jwks#utilizing-jwks-endpoint-in-the-intranet) for more information.
 
 ## Generating JWKS
 
-Please refer [here](docs/dev/jwks-endpoint.md#generating-jwks) for more information.
+Please refer [here](sections/auth/jwks#generating-jwks) for more information.
 
-Please refer [here](docs/sample-codes/jwks-endpoint) for code samples.
+Please refer [here](sections/auth/jwt-sample) for code samples.
 
 ## API Payload Hash
 
 If the API method is POST, PUT or PATCH, the API payload binary will have to be hashed using SHA-256. The Payload should be standardized [as below](#apex-standardized-json-payload) (for JSON payload).
 
-### **APEX Standardized JSON Payload**
+### _APEX Standardized JSON Payload_
 
 For purposes of consistency of SHA256 data hash across different OS to ease troubleshooting, API payload containing JSON object and data shall be serialized into a single string, and hashed, before sending the serialized string as the payload for the API request.
 
@@ -76,7 +76,7 @@ An example of an APEX standardized JSON string is:
 {"Image":{"Width":800,"Height":600,"Title":"View from 15th Floor","Thumbnail":{"Url":"http://www.example.com/image/481989943","Height": 125,"Width":100},"Animated":false,"IDs":[116,943,234,38793]}}
 ```
 
-### **APEX Standardized SOAP Payload**
+### _APEX Standardized SOAP Payload_
 
 For purposes of consistency of SHA256 data hash across different OS to ease troubleshooting, SOAP payload shall be serialized into a single string without any Carriage Return and Line Feed. These should be removed: CRLF ('\r\n' or 0x0D 0x0A) and LF ('\n' or 0x0A) and it is recommended to use UTF-8.
 
@@ -105,11 +105,11 @@ The JWT can be generated using common libraries available based on RFC7519 with 
 | 9    | sub       | This is the method of the API (eg. **_POST_**)                                                                                                                                                                                                                                                                     |
 | 10   | data      | This is the SHA-256 [API Payload Hash](#api-payload-hash) of the payload of API.(eg. SHA-256 hash of **_{"payload":"data"}_** is **_cc575c4ed557481e31d9a2a0580bc464e84b3a79c5fc94e4fd94ba33b3e54dbc_**                                                                                                            |
 
-Please see [here](docs/sample-codes/jwt-auth.md) for sample codes to generate the JWT.
+Please see [here](sections/auth/jwt-sample#jwt-authentication) for sample codes to generate the JWT.
 
 ## Authorization Header
 
-The developer will have to attach the JWT to the **x-apex-jwt** header. The JWT can be tested with the [Hello World! API](docs/hello-world/jwt-auth.md) beforehand.
+The developer will have to attach the JWT to the **x-apex-jwt** header. The JWT can be tested with the [Hello World! API](sections/auth/jwt-hello-world) beforehand.
 
 ```
 POST /agency/api
@@ -119,11 +119,11 @@ x-apex-jwt: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwZXgtZXhhbXBsZSJ9.eyJ
 
 ## JWK Rotation
 
-Please refer [here](docs/dev/jwks-endpoint.md#jwk-rotation) for more information.
+Please refer [here](sections/auth/jwks#jwk-rotation) for more information.
 
 ## Hello World! APIs
 
-These [APIs](docs/hello-world/jwt-auth.md) can be subscribed to and can help the Developer to:
+These [APIs](sections/auth/jwt-hello-world) can be subscribed to and can help the Developer to:
 
 - Evaluate if the JWT authentication header has been generated correctly.
 - Evaluate the SHA-256 hash of the API payload binary which is sent to the API.
