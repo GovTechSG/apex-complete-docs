@@ -20,14 +20,13 @@
 
 - Publishing APIs
   - [Introduction](sections/publishing/introduction.md)
-  - [Creating APIs](/)
-  - [Publishing APIs](/)
-  - [Updating APIs](/)
-  - [Cross-zone Bridging of APIs](/)
-  - [Manage access To APIs](/)
-  - [Making APIs discoverable](/)
-  - [Versioning APIs](/)
-  - [Monitoring APIs](/)
+  - [Creating APIs](sections/publishing/create-api.md)
+  - [Publishing APIs](sections/publishing/publish-api.md)
+  - [Updating APIs](sections/publishing/update-api.md)
+  - [Versioning APIs](sections/publishing/version-api.md)
+  - [Cross-zone bridging of APIs](sections/publishing/bridging-api.md)
+  - [Managing access to APIs](sections/publishing/api-access.md)
+  - [Making APIs discoverable](sections/publishing/catalog-api.md)
 
 - Securing API calls with JWT Authentication
   - [Introduction](sections/auth/introduction.md)
