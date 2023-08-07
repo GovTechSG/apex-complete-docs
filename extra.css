@@ -1,3 +1,7 @@
+:root {
+  --sidebar-width : 30rem;
+}
+
 .app-name-link img {
   width: 75%;
 }
