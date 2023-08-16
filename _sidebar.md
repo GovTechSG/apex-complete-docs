@@ -51,4 +51,4 @@
 
 - General Enquiries / FAQs
   - [Scheduled maintenance](sections/faqs/maintenance.md)
-  - [List of Trusted Certificate Authorities](sections/faqs/trusted-cert-authorities.md)
+  - [List of Recommended Trusted Certificate Authorities](sections/faqs/trusted-cert-authorities.md)

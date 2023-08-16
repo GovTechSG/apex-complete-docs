@@ -1,4 +1,4 @@
-# List of Trusted Certificate Authorities
+# List of Recommended Trusted Certificate Authorities for APEX Cloud
 
 - [digiCert](https://www.digicert.com/digicert-root-certificates.htm)
 - [Entrust](https://www.entrust.com/)
