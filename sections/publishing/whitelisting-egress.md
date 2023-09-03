@@ -21,8 +21,8 @@ Note:
 - Port will be default to **80 for http** and **443 for https** if not specified in the url. If you are using a different port for your API host, you need to specify in the url.
 - Whitelist entry is created based on the url's protocol, domain and port combination. 
   
-  *__Example 1__: http://example.com and https://example.com should be whitelisted separately as they have different protocols.*
+  *__Example 1__: `http://example.com` and `https://example.com` should be whitelisted separately as they have different protocols.*
   
-  *__Example 2__: http://example.com:5555 and http://example.com:6666 should be whitelisted separately too as they have different ports.*
+  *__Example 2__: `http://example.com:5555` and `http://example.com:6666` should be whitelisted separately too as they have different ports.*
   
-  *__Example 3__: http://example.com/my-api1 and http://example.com/my-api2 are considered the same entry (thus the one added later will fail), as their protocol, domain and port combination are the same (http+example.com+80)*
+  *__Example 3__: `http://example.com/my-api1` and `http://example.com/my-api2` are considered the same entry (thus the one added later will fail), as their protocol, domain and port combination are the same (http+example.com+80)*

@@ -8,15 +8,12 @@
   - [Non-government Users via Corppass](sections/onboarding/corppass.md)
   - [Post-onboarding](sections/onboarding/post-onboarding.md)
 
-<!-- - Consuming APIs
-  - [Introduction](/)
-  - [Browsing APIs](/)
-  - [Requesting access to APIs](/)
-  - [Creating applications](/)
-  - [Requesting approvals to applications](/)
-  - [Generating API Keys](/)
-  - [Subscribing applications to APIs](/)
-  - [Onboarding applications to OAuth 2.1](/) -->
+- Consuming APIs
+  - [Introduction](sections/consuming/introduction.md)
+  - [Creating an application](sections/consuming/create-application.md)
+  - [Generating API Keys](sections/consuming/api-keys.md)
+  - [Subscribing applications to APIs](sections/consuming/subscribe-api.md)
+  <!-- - [Upgrading applications to use OAuth 2.1](/) -->
 
 - Publishing APIs
   - [Introduction](sections/publishing/introduction.md)
