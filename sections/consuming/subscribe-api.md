@@ -1,8 +1,8 @@
 # Subscribing applications to APIs
 
-Before an API key of an application can be allowed entry to access an API, it first has to be subscribed to that API.
+Before an API key of an application can be allowed entry to access an API, it first has to be subscribed to that API. You may begin this workflow by navigating through:
 
-`Applications` > `[Application of choice]` > `API Access`
+`Applications` > `[Application of choice]` > `API Access Tab`
 
 ![Image](_assets/sub-1.png)
 
