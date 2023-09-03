@@ -2,12 +2,9 @@
 
 Applications allow app developers to generate credentials (API Key, OAuth) to consume APIs that are protected by authentication.
 
-This guide will show both the API Developer Portal (if you are a Non-Government User) and the API Manager (if you are a public officer).
-
 ## Step 1 - Finding the Applications page
 
-The first step to consuming APIs, is to first create an application. You may begin this step by navigating to the apps page (found in the **Apps** tab in the navigation bar),\
-and by clicking on the `Create Application` button.
+The first step to consuming APIs, is to first create an application. You may begin this step by navigating to the apps page (found in the **Applications** tab in the navigation bar), and by clicking on the `Create Application` button.
 
 ![Image](./_assets/apps.png)
 
@@ -16,7 +13,6 @@ and by clicking on the `Create Application` button.
 In the `Create New Application` page, you will be presented with a form to be filled before an application can be created.
 
 ![Image](./_assets/new-app-filled.png)
-
 
 | Field            | Description                                                                                                  | Remarks                    |
 | ---------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------- |
