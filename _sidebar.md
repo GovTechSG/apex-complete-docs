@@ -4,15 +4,15 @@
 
 - Onboarding to APEX
   - [Introduction](sections/onboarding/introduction.md)
-  - [Public Officers via TechPass](sections/onboarding/techpass.md)
-  - [Non-government Users via Corppass](sections/onboarding/corppass.md)
+  - [TechPass (Public Officers)](sections/onboarding/techpass.md)
+  - [Corppass (Non-government Users)](sections/onboarding/corppass.md)
   - [Post-onboarding](sections/onboarding/post-onboarding.md)
 
 - Consuming APIs
   - [Introduction](sections/consuming/introduction.md)
   - [Creating an application](sections/consuming/create-application.md)
   - [Generating API Keys](sections/consuming/api-keys.md)
-  - [Subscribing applications to APIs](sections/consuming/subscribe-api.md)
+  - [Subscribing to APIs](sections/consuming/subscribe-api.md)
   <!-- - [Upgrading applications to use OAuth 2.1](/) -->
 
 - Publishing APIs
