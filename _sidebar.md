@@ -1,7 +1,7 @@
+Getting Started
+
 - Overview
   - [Introduction](sections/home.md)
-  <!-- - [What's new?](/) -->
-
 - Onboarding to APEX
   - [Introduction](sections/onboarding/introduction.md)
   - [TechPass (Public Officers)](sections/onboarding/techpass.md)
@@ -15,8 +15,13 @@ Developers
   - [Creating an application](sections/consuming/create-application.md)
   - [Generating API Keys](sections/consuming/api-keys.md)
   - [Subscribing to APIs](sections/consuming/subscribe-api.md)
-  <!-- - [Upgrading applications to use OAuth 2.1](/) -->
-
+- Consuming APIs with OAuth 2.1
+  - [Introduction](sections/oauth/introduction.md)
+  - [Nomenclature of Consumer Guide](sections/oauth/nomenclature.md)
+  - [Consumer Onboarding Steps](sections/oauth/onboarding.md)
+  - [Create JWKS Endpoint](sections/oauth/create-jwks-endpoint.md)
+  - [Authorization Code Flow](sections/oauth/authz-token.md)
+  - [Sample Codes](sections/oauth/sample-codes.md)
 - Consuming APIs with JWT Auth
   - [Introduction](sections/auth/introduction.md)
   - [Understanding JWT](sections/auth/jwt.md)
@@ -25,9 +30,6 @@ Developers
   - [Working with JWKS](sections/auth/jwks.md)
   - [Sample codes for JWT Auth](sections/auth/jwt-sample.md)
   - [(Hello World!) Testing JWT Auth header](sections/auth/jwt-hello-world.md)
-
-- Consuming APIs with OAuth 2.1
-  - [Introduction](sections/auth/introduction.md)
 
 Publishers
 
@@ -41,7 +43,6 @@ Publishers
   - [Cross-zone bridging of APIs](sections/publishing/bridging-api.md)
   - [Managing access to APIs](sections/publishing/api-access.md)
   - [Making APIs discoverable](sections/publishing/catalog-api.md)
-
 - Monitoring APIs
   - [Monitoring dashboards](sections/monitoring/dashboards.md)
   - [Real-time dashboard](sections/monitoring/real-time-dashboards.md)
@@ -55,7 +56,6 @@ Support
   - [Debugging JWT authentications](sections/troubleshooting/jwt.md)
   - [Debugging network connectivity](sections/troubleshooting/network.md)
   - [Debugging API manager portal issues](sections/troubleshooting/api-manager.md)
-
 - General Enquiries / FAQs
   - [Scheduled maintenance](sections/faqs/maintenance.md)
   - [List of Recommended Trusted Certificate Authorities](sections/faqs/trusted-cert-authorities.md)
