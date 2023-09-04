@@ -8,12 +8,28 @@
   - [Corppass (Non-government Users)](sections/onboarding/corppass.md)
   - [Post-onboarding](sections/onboarding/post-onboarding.md)
 
-- Consuming APIs
+Developers
+
+- Consuming APIs (Prerequisite)
   - [Introduction](sections/consuming/introduction.md)
   - [Creating an application](sections/consuming/create-application.md)
   - [Generating API Keys](sections/consuming/api-keys.md)
   - [Subscribing to APIs](sections/consuming/subscribe-api.md)
   <!-- - [Upgrading applications to use OAuth 2.1](/) -->
+
+- Consuming APIs with JWT Auth
+  - [Introduction](sections/auth/introduction.md)
+  - [Understanding JWT](sections/auth/jwt.md)
+  - [Visualizing JWT flow in APEX](sections/auth/jwt-flow.md)
+  - [Using JWT Auth](sections/auth/jwt-auth.md)
+  - [Working with JWKS](sections/auth/jwks.md)
+  - [Sample codes for JWT Auth](sections/auth/jwt-sample.md)
+  - [(Hello World!) Testing JWT Auth header](sections/auth/jwt-hello-world.md)
+
+- Consuming APIs with OAuth 2.1
+  - [Introduction](sections/auth/introduction.md)
+
+Publishers
 
 - Publishing APIs
   - [Introduction](sections/publishing/introduction.md)
@@ -26,19 +42,12 @@
   - [Managing access to APIs](sections/publishing/api-access.md)
   - [Making APIs discoverable](sections/publishing/catalog-api.md)
 
-- Securing API calls with JWT Authentication
-  - [Introduction](sections/auth/introduction.md)
-  - [Understanding JWT](sections/auth/jwt.md)
-  - [Visualizing JWT flow in APEX](sections/auth/jwt-flow.md)
-  - [Using JWT Auth](sections/auth/jwt-auth.md)
-  - [Working with JWKS](sections/auth/jwks.md)
-  - [Sample codes for JWT Auth](sections/auth/jwt-sample.md)
-  - [(Hello World!) Testing JWT Auth header](sections/auth/jwt-hello-world.md)
-
 - Monitoring APIs
   - [Monitoring dashboards](sections/monitoring/dashboards.md)
   - [Real-time dashboard](sections/monitoring/real-time-dashboards.md)
   - [Quarterly and Yearly dashboard](sections/monitoring/quarterly-and-yearly-dashboards.md)
+
+Support
 
 - Troubleshooting
   - [Introduction](sections/troubleshooting/introduction.md)

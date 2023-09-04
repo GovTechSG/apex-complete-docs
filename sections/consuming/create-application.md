@@ -4,7 +4,7 @@ Applications allow app developers to generate credentials (API Key, OAuth) to co
 
 ## Step 1 - Finding the Applications page
 
-The first step to consuming APIs, is to first create an application. You may begin this step by navigating to the apps page (found in the **Applications** tab in the navigation bar), and by clicking on the `Create Application` button.
+The first step to consuming APIs, is to create an application. You may begin this step by navigating to the apps page (found in the **Applications** tab in the navigation bar), and by clicking on the `Create Application` button.
 
 ![Image](./_assets/apps.png)
 
