@@ -1,17 +1,29 @@
-# JWT Authentication
+# Consuming APIs with JWT Auth
+
+## Introduction
 
 APEX Supports JWT (JSON Web Token) Authentication as a secure means to secure the API transaction between a Consumer (API Requester) and Publisher (owner of API endpoint).
 
 Use the navigation menu on the left to browse the documentation. You can also search for specific terms using the search field.
 
-Here are some suggestions to get started:
+### Prerequisites
 
-<!-- - [Introduction to JWT](/sections/dev/introduction.md)
-- [JWT Authentication](/sections/dev/jwt-auth.md)
-- [JWKS Endpoint](/sections/dev/jwks-endpoint.md)
-- [APEX Flow Diagrams](/sections/dev/apex-flow-diagrams.md)
-- [Sample Codes for JWT Authentication](/sections/sample-codes/jwt-auth.md)
-- [Sample Codes for JWKS Endpoint](/sections/sample-codes/jwt-auth.md)
-- [Troubleshooting](/sections/troubleshooting/jwt-auth.md)
-- [Introduction to Hello World APIs](/sections/hello-world/jwt-auth.md)
-- [FAQs](/sections/faq/jwt-auth.md) -->
+> Before continuing, please ensure that you have already prepared:
+>
+> - [At least 1 application with JWKS](/sections/consuming/create-application.md)
+> - [At least 1 API Key](/sections/consuming/api-keys.md)
+> - [Subscribed to an API](/sections/consuming/subscribe-api.md)
+
+### Contents
+
+- [Introduction to JWT](/sections/auth/jwt.md)
+- [JWT Authentication](/sections/auth/jwt-auth.md)
+- [JWKS Endpoint](/sections/auth/jwks.md)
+- [Visualizing JWT flow in APEX](/sections/auth/jwt-flow.md)
+- [Sample Codes for JWT Auth / JWKS](/sections/auth/jwt-sample.md)
+- [Introduction to Hello World APIs](/sections/auth/jwt-hello-world.md)
+
+If you require additional support or more information, you may refer to our supplementary guides:
+
+- [Debugging JWT Auth](/sections/troubleshooting/jwt)
+- [FAQs on JWT Auth](sections/auth/jwt-auth?id=useful-information)

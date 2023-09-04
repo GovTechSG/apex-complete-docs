@@ -8,3 +8,4 @@ In this section, we will cover the [creation of applications](/sections/consumin
 If you have already done the above setup, you may proceed to the next sections:
 
 - [Consuming APIs with JWT Auth](/sections/auth/introduction.md)
+- [Consuming APIs with OAuth 2.1](/sections/oauth/introduction.md)
