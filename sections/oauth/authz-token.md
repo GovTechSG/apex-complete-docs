@@ -168,7 +168,7 @@ request and returns a response to the client.
 | ---------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Authorization Endpoint | Public TLS                       | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/authorize)                                                       |
 | Token Endpoint         | Public TLS with Client Assertion | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/token)                                                           |
-| Resource Server        | Public TLS                       | [Browse](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/browse-api) Publisher APIs for the URLs. |
+| Resource Server        | Public TLS                       | [Browse](sections/consuming/browsing-apis) Publisher APIs for the URLs. |
 
 After Sandbox URLs are tested successfully, you may request for Production URL access with the Publisher.
 

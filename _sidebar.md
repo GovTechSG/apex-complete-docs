@@ -10,6 +10,7 @@ Getting Started
 
 Developers
 
+- [Browsing APIs](sections/consuming/browsing-apis.md)
 - Consuming APIs (Prerequisite)
   - [Introduction](sections/consuming/introduction.md)
   - [Creating an application](sections/consuming/create-application.md)
