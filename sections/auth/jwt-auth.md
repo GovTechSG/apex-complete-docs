@@ -20,9 +20,11 @@ The Developer will have to create the respective Application(s) to subscribe to 
 
 Please note that 2 API Keys will be required for a bridging API. The Publisher should inform you if your API is a bridging API.
 
-> ![Image](./_assets/api-key-portal-1.png) ![Image](./_assets/api-key-portal-2.png) _For API Developer Portal Users_
+You may refer to our guide on [creating api keys](sections/consuming/api-keys) if you need a step-by-step by guide for this task, or start from scratch and see how to [create an application](sections/consuming/create-application) before creating an API key for it.
 
-> ![Image](./_assets/api-key-manager-1.png) _For API Manager Users_
+> For API Developer Portal Users ![Image](./_assets/api-key-portal-3.png)
+>
+> For API Manager Users ![Image](./_assets/api-key-manager-1.png)
 
 ## Prerequisites-JWKS Endpoint
 
@@ -32,7 +34,7 @@ The Developer will have to generate a JSON Web Key (JWK) set for signing their a
 
 With the **public key** generated, the developer will have to either,
 
-- Publish a JWKS (JSON Web Key Set) endpoint ([RFC7517](https://www.rfc-editor.org/rfc/rfc7517#appendix-A.1)) in the Endian [format](#example-of-jwks) typically in the URL of https://your-domain/.well-known/jwks.json, or
+- Publish a JWKS (JSON Web Key Set) endpoint [(RFC7517)](https://www.rfc-editor.org/rfc/rfc7517#appendix-A.1) in the Endian [format](#example-of-jwks) typically in the URL of `https://your-domain/.well-known/jwks.json`, or
 - In the APEX API Portal or API Manager, provide a string text of JWKS in the same [format](#example-of-jwks) when creating the APEX Application.
 
 Do note that your key ID (kid) is used to identify your signing key in case more than 1 key exists in the JWKS (such as for purposes of key rotation).

@@ -13,9 +13,11 @@ The guide provides step-by-step instructions for a Client Application Developer 
 
 > Before continuing, please ensure that you have already prepared:
 >
-> - [At least 1 application](/sections/consuming/create-application.md)
-> - [At least 1 API Key](/sections/consuming/api-keys.md)
-> - [Subscribed to an OAuth 2.1 protected API](/sections/consuming/subscribe-api.md)
+> 1. [At least 1 application](/sections/consuming/create-application.md)
+> 1. [At least 1 API Key](/sections/consuming/api-keys.md)
+> 1. [Subscribed to an OAuth 2.1 protected API](/sections/consuming/subscribe-api.md)
+>
+> If you need a recap on the above, you may start at out our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
 
 ### Contents
 

@@ -242,7 +242,7 @@ If the target endpoint is in APEX Cloud Internet zone, use:
    ![publish-api](./_assets/publish-api/publish-api.jpg)
 3. Enter **Virtual Host** and click **Publish**.
 
-   !> **Note:** To publish this API in a testing or Sandbox environment for non-government developers, you can enter the following URL in the Virtual Host field: **sandbox.api.gov.sg**. Next, you can follow the steps on [making your Sandbox API discoverable](/sections/publishing/making-api-discoverable.md).
+   !> **Note:** To publish this API in a testing or Sandbox environment for non-government developers, you can enter the following URL in the Virtual Host field: **sandbox.api.gov.sg**. Next, you can follow the steps on [making your Sandbox API discoverable](/sections/publishing/catalog-api.md).
 
 4. Published API will be able to access via https://{virtual-host}/{prefix-path}/{method-path}.
 
