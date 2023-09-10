@@ -24,7 +24,7 @@ Also note, OAuth Clients are extended from existing applications that you have c
 Expand the accordion on the **OAuth Sandbox** Card and select [Onboard to OAuth 2.1], a form will present itself that requires you to fill in:
 
 1. your hosted JWKS Endpoint
-2. a list of Callback/Redirect URLs for the Authorization to return the Authorization Code to.
+2. a list of Callback/Redirect URLs for the Authorization Server to return the Authorization Code to.
 3. a choice of scopes that your application will be using
 
 ## Step 2: Fill up OAuth Client fields and submit
