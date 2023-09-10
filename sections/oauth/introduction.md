@@ -20,7 +20,11 @@ The guide provides step-by-step instructions for a Client Application Developer 
 ### Contents
 
 - [Nomenclature of Consumer Guide](/sections/oauth/nomenclature.md)
-- [Consumer Onboarding Steps](/sections/oauth/onboarding.md)
+- [Consumer Onboarding Steps and setup](/sections/oauth/onboarding.md)
 - [Create JWKS Endpoint](/sections/oauth/create-jwks-endpoint.md)
+- [Create OAuth Client](/sections/oauth/client.md)
 - [Authorization Code Flow](/sections/oauth/authz-token.md)
+
+### References
+
 - [Sample Codes](/sections/oauth/sample-codes.md)

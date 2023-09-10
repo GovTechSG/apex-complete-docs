@@ -42,3 +42,7 @@ You may select the [Preview Auth URL] button to have a quick look on the **Clien
 ![Image](_assets/client-4.png)
 
 By being able to get the newly created **Client ID** and **Authorization URL**, you have met the complete prerequisite to implement the end-to-end Authorization flow.
+
+> If you need to change the JWKS Endpoint URL, scopes, or add/remove Callback URLs, simply click on the [Edit] button to do so.
+
+!> If you delete your application, do note that the onboarded OAuth Clients from the application will also be deleted.
