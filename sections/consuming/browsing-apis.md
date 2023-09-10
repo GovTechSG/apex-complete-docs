@@ -6,7 +6,7 @@ APEX Cloud lets you connect and explore existing APIs that have been published t
 
 ## 1. Discover APIs through the API Catalog
 
-These APIs are often sandbox APIs that the publishers has shared with the community as a whole for developers to discover and see if the API fits their development requirement.
+These APIs are often sandbox APIs that the publishers have shared with the community as a whole for developers to discover and see if the API fits their development requirement.
 
 ![Image](_assets/catalog-1.png)
 
