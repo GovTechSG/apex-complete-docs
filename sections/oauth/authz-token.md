@@ -4,7 +4,15 @@ This guide explains how to implement the [OAuth](https://datatracker.ietf.org/do
 CorpPass user to grant a third-party client application access to the Corppass user’s
 protected resources.
 
-If you are a Client Application Software Developer (SWD) be sure to carry out onboarding steps first, before carrying out the OAuth flow with the Sandbox endpoints.
+> Before continuing, please ensure that you have already prepared:
+>
+> 1. [At least 1 application](/sections/consuming/create-application.md)
+> 1. [At least 1 API Key](/sections/consuming/api-keys.md)
+> 1. [Subscribed to an OAuth 2.1 protected API](/sections/consuming/subscribe-api.md)
+> 1. [Created and publicly hosted a JWKS endpoint](/sections/oauth/create-jwks-endpoint.md)
+> 1. [Created an OAuth 2.1 Client from an application](/sections/oauth/client.md)
+>
+> If you need a recap on the above, you may start at out our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
 
 The OAuth flow is shown below.
 
@@ -45,7 +53,7 @@ Parameters are defined as follows:
 - **{redirect_uri}** is the Redirect URI of the Client Application (URL encoded)
 - **{scope}** is the OAuth2.1 scope which is provided by the Resource Server owner
 - **{code_challenge}** is the Code Challenge used for PKCE (generated in Step 2)
-- **{client_id}** is the Client ID generated in the onboarding [steps](docs/consumers/onboarding)
+- **{client_id}** is the Client ID generated in the onboarding [steps](sections/consumers/onboarding)
 
 Optional Parameter is as follows:
 

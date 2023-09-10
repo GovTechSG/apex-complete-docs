@@ -18,9 +18,11 @@ Developers
 - Consuming APIs with OAuth 2.1
   - [Introduction](sections/oauth/introduction.md)
   - [Nomenclature of Consumer Guide](sections/oauth/nomenclature.md)
-  - [Consumer Onboarding Steps](sections/oauth/onboarding.md)
-  - [Create JWKS Endpoint](sections/oauth/create-jwks-endpoint.md)
-  - [Authorization Code Flow](sections/oauth/authz-token.md)
+  - [Onboarding and Setup](sections/oauth/onboarding.md)
+  - [Creating the JWKS Endpoint](sections/oauth/create-jwks-endpoint.md)
+  - [Creating the OAuth Client](sections/oauth/client.md)
+  - [Implementing the Authorization Code Flow](sections/oauth/authz-token.md)
+  - [Testing Business API](sections/oauth/api-test.md)
   - [Sample Codes](sections/oauth/sample-codes.md)
 - Consuming APIs with JWT Auth
   - [Introduction](sections/auth/introduction.md)

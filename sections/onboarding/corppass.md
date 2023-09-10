@@ -10,7 +10,7 @@ You may view the onboarding instructions for Corppass [here](https://www.develop
 
 For other administrative instructions, like managing your Corppass account, you may refer to the common user guides [here](https://www.corppass.gov.sg/corppass/common/userguides).
 
-!> **Important:** Before a Corppass user can onboard to APEX Cloud and use the API Developer Portal, a **Corppass Admin (or Sub-Admin**) will need to assign the user to have access to APEX Cloud's e-Service: `apex-cloud`. You may refer to the assignment documentation [here](https://www.corppass.gov.sg/help/CP_User_Guide_05A_Admin_Subadmin_Set_Up_Assign_Users_Digital_Service_Access.pdf).
+!> **Important:** Before a Corppass user can onboard to APEX Cloud and use the API Developer Portal, a **Corppass Admin (or Sub-Admin**) will need to assign the user to have access to APEX Cloud's e-Service: `Apex Cloud`. You may refer to the assignment documentation [here](https://www.corppass.gov.sg/help/CP_User_Guide_05A_Admin_Subadmin_Set_Up_Assign_Users_Digital_Service_Access.pdf).
 
 ## Log in to the API Developer Portal
 

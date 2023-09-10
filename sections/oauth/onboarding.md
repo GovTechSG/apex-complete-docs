@@ -22,17 +22,32 @@ APEX will automatically create the consumer Organization (**CP\_\<UEN\>**) for t
 
 Do double-check that you are onboarded to this Organization. Refer to [Step 2 here](sections/onboarding/corppass.md).
 
-## 3. Application Setup
+## 3. Application Setup/upgrade
 
-The SWD can browse APIs [here](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/browse-api).
+> Before continuing, please ensure that you have already prepared:
+>
+> 1. [At least 1 application](/sections/consuming/create-application.md)
+> 1. [At least 1 API Key](/sections/consuming/api-keys.md)
+> 1. [Subscribed to an OAuth 2.1 protected API with the application that has an API key](/sections/consuming/subscribe-api.md)
+>
+> If you need a recap on the above, you may start at out our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
 
-The SWD will then create the Application in the Developers Portal (Read [here](sections/consuming/create-application)), and request access to the API (Read [here](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/consume-api?id=consume-apis)). The Publisher may at this point have to approve your API request.
+<!-- The SWD can browse APIs [here](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/browse-api). -->
 
-The SWD will also have to [create and host a JWKS endpoint](sections/oauth/create-jwks-endpoint.md) and then onboard to Oauth 2.1 for Sandbox (Read [here](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/oauth)) and get the Client ID (or App ID) for the Business API call.
+<!-- The SWD will then create the Application in the Developers Portal (Read [here]), and request access to the API (Read [here](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/consume-api?id=consume-apis)). The Publisher may at this point have to approve your API request. -->
+ <!-- (Read [here](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/oauth)) -->
+In order to transact with OAuth 2.1, you have to create an OAuth 2.1 Sandbox Client from an existing application. This process requires you to [create and host a JWKS endpoint](sections/oauth/create-jwks-endpoint.md).
 
-The SWD will also ensure that the API Key for the business API is created. Read [here](sections/consuming/api-key).
+After successfully creating an OAuth 2.1 Sandbox Client from your application, you can use the generated Client ID and Authorization URL to test the Business API.
+<!-- The SWD will also ensure that the API Key for the business API is created. Read [here](sections/consuming/api-key). -->
 
-## 4. Business API Test
+Continue:
+
+1. [Creating and hosting a JWKS endpoint](sections/oauth/create-jwks-endpoint.md)
+2. [Creating an OAuth 2.1 Client (Sandbox) from an existing application](sections/oauth/client.md)
+3. [Testing Business API](sections/oauth/api-test.md)
+
+<!-- ## 4. Business API Test
 
 The Publisher API Specs can usually be found [here](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/browse-api) (or if not, contact the Publisher directly).
 
@@ -43,4 +58,4 @@ The Business API request through APEX requires these additional headers below.
 | Headers       | Definition                                                |
 | ------------- | --------------------------------------------------------- |
 | Authorization | Authorization Token obtained from Authorization Code flow |
-| x-apex-apikey | API Key obtained from Step 3 above                        |
+| x-apex-apikey | API Key of your application obtained from Step 3 above    | -->
