@@ -14,10 +14,13 @@ By clicking through the API in the Catalog, you may typically find instructions 
 
 ![Image](_assets/catalog-2.png)
 
-Once the Publishing Organization of the API approves your request to allow access to the live API, you will find the API in the Approved APIs page, which is the next mode of API viewing.
+!> In some cases where APIs are not show to the community (and therefore not discoverable), you may reach out and contact publishers directly to request access to their APIs. It is up to the publishers themselves to grant you access.
+
+Once the Publishing Organization of the API approves your request to allow access to the live API, you will find the API in the **Approved APIs** page, which is the next mode of API viewing.
 
 ## 2. View and subscribe to APIs in the Approved API list
 
-The Approved APIs page contains a list of the APIs that are accessible to your organization(s). Here, because you as the developer has access to these APIs, you may subscribe [applications](/sections/consuming/introduction.md) to the API.
+The Approved APIs page contains a list of the APIs that are accessible to your organization(s). Here, because at least 1 of your organizations has access to these APIs, you may view and subscribe your [applications](/sections/consuming/introduction.md) to the API.
+
 
 ![Image](_assets/approved-1.png)
