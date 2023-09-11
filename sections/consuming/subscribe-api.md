@@ -10,6 +10,8 @@ By clicking on the `Manage API Subscriptions` button, you will be prompted to se
 
 ![Image](_assets/sub-2.png)
 
+!> If your organization has not requested access to (or have published) any APIs, then there will be no APIs present to select. See our guide on [browsing APIs](/sections/consuming/browsing-apis.md) to learn more on finding the right APIs for your use-cases.
+
 ![Image](_assets/sub-3.png)
 
 Upon submitting the modal form, your application will be subscribed to the API. You may repeat this steps multiple times if you required access to multiple APIs.
