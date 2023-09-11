@@ -14,7 +14,7 @@ By clicking through the API in the Catalog, you may typically find instructions 
 
 ![Image](_assets/catalog-2.png)
 
-!> In some cases where APIs are not show to the community (and therefore not discoverable), you may reach out and contact publishers directly to request access to their APIs. It is up to the publishers themselves to grant you access.
+!>  In some cases, APIs are not shared with the community (and therefore not discoverable). However, you may reach out and contact publishers directly to request access to their APIs if you happen to learn about their APIs outside of the APEX Cloud portals.
 
 Once the Publishing Organization of the API approves your request to allow access to the live API, you will find the API in the **Approved APIs** page, which is the next mode of API viewing.
 
