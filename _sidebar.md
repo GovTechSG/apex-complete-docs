@@ -60,5 +60,6 @@ Support
   - [Debugging network connectivity](sections/troubleshooting/network.md)
   - [Debugging API manager portal issues](sections/troubleshooting/api-manager.md)
 - General Enquiries / FAQs
-  - [Scheduled maintenance](sections/faqs/maintenance.md)
-  - [List of Recommended Trusted Certificate Authorities](sections/faqs/trusted-cert-authorities.md)
+  - [Scheduled maintenance](sections/support/maintenance.md)
+  - [List of Recommended Trusted Certificate Authorities](sections/support/trusted-cert-authorities.md)
+  - [Raise a ticket](/sections/support/raise-ticket.md)
