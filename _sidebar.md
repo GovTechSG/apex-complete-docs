@@ -2,10 +2,10 @@ Getting Started
 
 - Overview
   - [Introduction](sections/home.md)
-- Onboarding to APEX
-  - [Introduction](sections/onboarding/introduction.md)
-  - [TechPass (Public Officers)](sections/onboarding/techpass.md)
-  - [Corppass (Non-government Users)](sections/onboarding/corppass.md)
+- Onboard to APEX
+  - [Pre-onboarding](sections/onboarding/introduction.md)
+  - [Onboard as a Publisher](/sections/onboarding/publisher-onboarding.md)
+  - [Onboard as a Developer](/sections/onboarding/developer-onboarding.md)
   - [Post-onboarding](sections/onboarding/post-onboarding.md)
 
 Developers
