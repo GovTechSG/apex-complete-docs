@@ -24,7 +24,7 @@ To onboard to APEX Cloud as a Developer, select your user type below:
 
 1. Once your account is added to your Organizations, you can switch between  Organizations.
 
-1. Proceed to use APEX Cloud and consume APIs. Refer to the [User Guide](/sections/consuming/introduction.md).
+1. Proceed to use APEX Cloud and consume APIs. Refer to the [Developer Guide](/sections/consuming/introduction.md).
 
 ## Corppass users
 
@@ -32,9 +32,9 @@ To onboard to APEX Cloud as a Developer, select your user type below:
 
     > **Note:** You need to change your default email address upon first login before you can continue using APEX Cloud.
 
-1. Go to your profile and check your **Organization (Role)**.
+1. Go to your profile and check your **Organization(s)**.
 
-    > **Note:** For Non-Government Users, the format for the Organization Name is usually **CP_{UEN}**, where UEN is the Unique Entity Number issued for the company or private entity.
+    > **Note:** For non-government Users, the format for the Organization Name is usually **CP_{UEN}**, where UEN is the Unique Entity Number issued for the company or private entity.
 
-1. Proceed to use APEX Cloud and consume APIs. Refer to the [User Guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide/docs/dev/introduction).
+1. Proceed to use APEX Cloud and consume APIs. Refer to the [Developer Guide](/sections/consuming/introduction.md).
 

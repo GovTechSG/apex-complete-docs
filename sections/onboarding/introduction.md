@@ -15,8 +15,8 @@ Currently, only API publishers have to pay to use APEX Cloud. Public officers ca
 
 To onboard to APEX Cloud and get access to the APEX Cloud portals, a TechPass or Corppass account is required. Select your user type below.
 
-- [I am representing a government agency](#onboarding-to-techpass-for-public-officers)<br>— I have a TechPass or can get a TechPass account.<br>
-- [I am a non-government user](#onboarding-to-corppass-for-non-government-users) <br>— I have a Corppass or can get a Corppass account.
+- [I am representing a government agency](#techpass-for-public-officers)<br>— I have a TechPass or can get a TechPass account.<br>
+- [I am a non-government user](#corppass-for-non-government-users) <br>— I have a Corppass or can get a Corppass account.
 
 ### TechPass for Public Officers
 
