@@ -3,7 +3,7 @@
 A major component for working with the typical inbound security mechanisms of the APIs behind the APEX Cloud API Gateway, is the application's API Key.
 You may begin this workflow by navigating through:
 
-`Applications` > `[Application of choice]` > `API Keys Tab`
+`Applications` &rarr; `[Application of choice]` &rarr; `API Keys Tab`
 
 ![Image](_assets/api-key-1.png)
 

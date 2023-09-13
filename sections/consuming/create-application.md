@@ -2,13 +2,13 @@
 
 Applications allow app developers to generate credentials (API Key, OAuth) to consume APIs that are protected by authentication.
 
-## Step 1 - Finding the Applications page
+You may begin this workflow by navigating through either flows:
 
-The first step to consuming APIs, is to create an application. You may begin this step by navigating to the apps page (found in the **Applications** tab in the navigation bar), and by clicking on the `Create Application` button.
+`Applications` &rarr; `Clicking on [+ New Application]`
 
 ![Image](./_assets/apps.png)
 
-## Step 2 - Creating the Application
+## Step 1 - Creating the Application
 
 In the `Create New Application` page, you will be presented with a form to be filled before an application can be created.
 
@@ -25,7 +25,7 @@ In the `Create New Application` page, you will be presented with a form to be fi
 | JWKS URL         | A publicly accessible URL that has the jwks.json                                                             | If URL option is selected  |
 | JWKS JSON        | The actual JWKS (in the format of { "keys": [ {JWK_1}, {JWK_2} ] }')                                         | If JSON option is selected |
 
-## Step 3 - Requesting approval for the newly created application (If required)
+## Step 2 - Requesting approval for the newly created application (If required)
 
 If you are not an organization admin, and when you have successfully submitted the form to create a new application, you will notice that your new application is in the pending state.
 

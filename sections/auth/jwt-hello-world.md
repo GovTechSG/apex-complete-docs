@@ -22,7 +22,7 @@ Hello World!
 
 ## SHA-256 Generator
 
-This API evaluates the sha-256 of the API payload based on the binary content and returns it in the response body. If **x-apex-returncontent** is included as a header with any value, the API payload is returned below the hash (in UTF-8).
+This API evaluates the sha-256 of the API payload based on the binary content and returns it in the header x-apex-sha256. By default, the API payload is returned in the response body.  If **x-apex-returncontent** is included as a header with any value, the API payload is not returned.
 
 Example API Test:
 
@@ -35,6 +35,8 @@ x-apex-apikey: xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
 Response:
 HTTP/1.1 200 OK
 x-apex-sha256: cc575c4ed557481e31d9a2a0580bc464e84b3a79c5fc94e4fd94ba33b3e54dbc
+
+{"payload":"data"}
 ```
 
 Example API Test with x-apex-returncontent:
@@ -43,14 +45,12 @@ Example API Test with x-apex-returncontent:
 POST /helloworld/sha256
 Host: public-stg.api.gov.sg
 x-apex-apikey: xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
-x-apex-returncontent: yes
+x-apex-returncontent: false
 {"payload":"data"}
 
 Response:
 HTTP/1.1 200 OK
 x-apex-sha256: cc575c4ed557481e31d9a2a0580bc464e84b3a79c5fc94e4fd94ba33b3e54dbc
-
-{"payload":"data"}
 ```
 
 <!-- TODO: Include Swagger and screenshot -->

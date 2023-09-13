@@ -57,7 +57,7 @@ To utilize JWKS endpoint in the intranet, it is recommended for the Consumer of 
 
 ## Generating JWKS
 
-While it is recommended to generate the JWKS programmatically to allow programatic/automatic rotation of JWKS keys, it can also be generated from a website like [https://mkjwk.org/](https://mkjwk.org/) with specifications set as Curve: P-256, Key Use: Signature, Algorithm: ES256, Key ID: SHA-256.
+While it is recommended to generate the JWKS programmatically to allow programmatic/automatic rotation of JWKS keys, it can also be generated from a website like [https://mkjwk.org/](https://mkjwk.org/) with specifications set as Curve: P-256, Key Use: Signature, Algorithm: ES256, Key ID: SHA-256.
 
 An example of JWKS generation is shown in the [sample code section](sections/auth/jwt-sample#jwks-endpoint).
 

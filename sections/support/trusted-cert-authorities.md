@@ -1,4 +1,6 @@
-# List of Recommended Trusted Certificate Authorities for APEX Cloud
+# Trusted Certificate Authorities
+
+## List of Recommended Trusted Certificate Authorities for APEX Cloud
 
 - [digiCert](https://www.digicert.com/digicert-root-certificates.htm)
 - [Entrust](https://www.entrust.com/)
@@ -11,5 +13,7 @@
 - [Thawte](https://www.thawte.com)
 - [SGCore (Intranet only)](https://sgcore-portal.sgnet.gov.sg/indexSR.html)
 - [Amazon](https://www.amazontrust.com/repository/)
+
+### For publishers to note
 
 !> **Important:** The Publisher is accountable for taking appropriate actions to handle and mitigate any potential security threats that may arise due to the usage of non-trusted root Certificate Authorities (CAs) or self-signed certificates, which are not explicitly mentioned in this document. This encompasses addressing any security incidents that may occur as a result of the use of non-trusted root Certificate Authorities (CAs) or self-signed certificates.

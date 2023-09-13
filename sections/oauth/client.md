@@ -11,7 +11,7 @@
 
 You may begin this workflow by navigating through:
 
-`Applications` > `[Application of choice]` > `OAuth 2.1 (Corppass) Tab`
+`Applications` &rarr; `Clicking on [Application of choice]` &rarr; `Clicking on [OAuth 2.1 (Corppass) Tab]`
 
 Before setting up the production access to OAuth 2.1, you will typically first need to create an OAuth 2.1 **Sandbox** Client to run a conformance test. The steps below will go through the end-to-end creation of the Sandbox Client. (Once verified, you may proceed to create the actual OAuth 2.1 Client by repeating the same steps below)
 
