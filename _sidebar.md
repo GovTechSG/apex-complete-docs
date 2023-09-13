@@ -13,7 +13,7 @@ Developers
 - [Browsing APIs](sections/consuming/browsing-apis.md)
 - Consuming APIs (Prerequisite)
   - [Introduction](sections/consuming/introduction.md)
-  - [Creating an application](sections/consuming/create-application.md)
+  - [Creating/Editing an application](sections/consuming/create-application.md)
   - [Generating API Keys](sections/consuming/api-keys.md)
   - [Subscribing to APIs](sections/consuming/subscribe-api.md)
 - Consuming APIs with OAuth 2.1

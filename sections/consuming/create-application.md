@@ -1,4 +1,4 @@
-# Creating an application
+# Creating or editing an application
 
 Applications allow app developers to generate credentials (API Key, OAuth) to consume APIs that are protected by authentication.
 
@@ -6,11 +6,13 @@ You may begin this workflow by navigating through either flows:
 
 `Applications` &rarr; `Clicking on [+ New Application]`
 
+`Applications` &rarr; `Clicking on [Existing Application of choice]` &rarr; `Clicking on [Edit Details]`
+
 ![Image](./_assets/apps.png)
 
-## Step 1 - Creating the Application
+## Step 1 - Creating/Edit the Application
 
-In the `Create New Application` page, you will be presented with a form to be filled before an application can be created.
+In the `Create New Application` or `Edit Application details` page, you will be presented with a form to be filled before an application can be created/modified.
 
 ![Image](./_assets/new-app-filled.png)
 
@@ -33,6 +35,6 @@ If you are not an organization admin, and when you have successfully submitted t
 
 Here, you will not be able to continue the application workflow (creating API Keys, subscribing to APIs) until an organization admin approves your application.
 
-> Do check in with your own organization admins and remind them if they have yet to do approve your application through their inbox:
+> Do check in with your own organization admins and remind them if they have yet to approve your application through their inbox:
 >
 > ![Image](./_assets/pending-app-1.png) ![Image](./_assets/pending-app-2.png)
