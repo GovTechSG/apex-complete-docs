@@ -32,7 +32,7 @@ Do double-check that you are onboarded to this Organization. Refer to [Step 2 he
 > 1. [At least 1 API Key](/sections/consuming/api-keys.md)
 > 1. [Subscribed to an OAuth 2.1 protected API with the application that has an API key](/sections/consuming/subscribe-api.md)
 >
-> If you need a recap on the above, you may start at out our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
+> If you need a recap on the above, you may start at our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
 
 In order to transact with OAuth 2.1, you have to create an OAuth 2.1 Sandbox Client from an existing application. This process requires you to [create and host a JWKS endpoint](sections/oauth/create-jwks-endpoint.md).
 

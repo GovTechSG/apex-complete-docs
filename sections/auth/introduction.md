@@ -14,7 +14,7 @@ Use the navigation menu on the left to browse the documentation. You can also se
 > 1. [At least 1 API Key](/sections/consuming/api-keys.md)
 > 1. [Subscribed to an API](/sections/consuming/subscribe-api.md)
 >
-> If you need a recap on the above, you may start at out our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
+> If you need a recap on the above, you may start at our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
 
 ### Contents
 

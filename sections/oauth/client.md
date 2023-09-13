@@ -7,7 +7,7 @@
 > 1. [Subscribed to an OAuth 2.1 protected API](/sections/consuming/subscribe-api.md)
 > 1. [Created and publicly hosted a JWKS endpoint](/sections/oauth/create-jwks-endpoint.md)
 >
-> If you need a recap on the above, you may start at out our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
+> If you need a recap on the above, you may start at our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
 
 You may begin this workflow by navigating through:
 

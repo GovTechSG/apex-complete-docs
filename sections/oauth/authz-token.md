@@ -12,7 +12,7 @@ protected resources.
 > 1. [Created and publicly hosted a JWKS endpoint](/sections/oauth/create-jwks-endpoint.md)
 > 1. [Created an OAuth 2.1 Client from an application](/sections/oauth/client.md)
 >
-> If you need a recap on the above, you may start at out our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
+> If you need a recap on the above, you may start at our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
 
 The OAuth flow is shown below.
 
