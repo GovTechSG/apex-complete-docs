@@ -9,7 +9,7 @@ To onboard to APEX Cloud as a Developer, select your user type below:
 
 ## Techpass users
 
-1. Submit a request for a **Service Sheet**. Go to [go.gov.sg/getapex](https://go.gov.sg/getapex).
+1. Submit a request for a **Service Sheet**. Go to [go.gov.sg/apex-support](https://go.gov.sg/apex-support).
 
 1. Log in to an API Manager Portal environment. 
 
