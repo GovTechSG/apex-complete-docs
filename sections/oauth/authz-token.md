@@ -104,13 +104,13 @@ The specifications for the request to the Token Endpoint are as follows:
 | Method         | POST                                |                                                                                                                                          |
 | Content-Type   | 'application/x-www-form-urlencoded' |                                                                                                                                          |
 | Body           | **key**                             | **Specification**                                                                                                                        |
-|                | 'code'                              | String of parameter retrieved from [Step 7 above](docs/consumers/authz-token?id=_7-client-extracts-authorization-code-from-redirect-uri) |
+|                | 'code'                              | String of parameter retrieved from [Step 7 above](sections/oauth/authz-token?id=_7-client-extracts-authorization-code-from-redirect-uri) |
 |                | 'client_assertion'                  | **{client assertion}** specified below                                                                                                   |
-|                | 'client_id'                         | String of Client ID obtained during onboarding [steps](docs/consumers/onboarding)                                                        |
+|                | 'client_id'                         | String of Client ID obtained during onboarding of your OAuth Client [steps](sections/oauth/client)                                                        |
 |                | 'client_assertion_type'             | 'urn:ietf:params:oauth:client-assertion-type:jwt-bearer'                                                                                 |
-|                | 'grant_type'                        | Authorization Code obtained in [Step 7 above](docs/consumers/authz-token?id=_7-client-extracts-authorization-code-from-redirect-uri)     |
+|                | 'grant_type'                        | 'authorization_code'                                                                                                                     |
 |                | 'redirect_uri'                      | String of exact redirect URI of Client Application in URL encoded format                                                                 |
-|                | 'code_verifier'                     | String of PKCE Code Verifier generated in [Step 2 above](docs/consumers/authz-token?id=_2-token-endpoint-request)                        |
+|                | 'code_verifier'                     | String of PKCE Code Verifier generated in [Step 2 above](sections/oauth/authz-token?id=_2-token-endpoint-request)                        |
 
 **Client Assertion**<br>
 
@@ -126,7 +126,7 @@ The specifications for the request to the Token Endpoint are as follows:
 | 'iat' | Current epoch time of epoch time, in seconds                                                                                                                                                                                |
 | 'exp' | Expiry time in Linux time + 5 minutes, in seconds                                                                                                                                                                           |
 
-A sample code to generate the signed client assertion is [here]().
+A sample code to generate the signed client assertion is [here](sections/oauth/sample-codes?id=generate-client-assertion).
 
 ## 9. The Token Endpoint Returns the Access Token
 
@@ -164,10 +164,10 @@ request and returns a response to the client.
 
 ## Table of Endpoint URLs
 
-| Sandbox Endpoint       | Access Mechanism                 | Sandbox Link                                                                                                             |
-| ---------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Authorization Endpoint | Public TLS                       | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/authorize)                                                       |
-| Token Endpoint         | Public TLS with Client Assertion | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/token)                                                           |
+| Sandbox Endpoint       | Access Mechanism                 | Sandbox Link                                                            |
+| ---------------------- | -------------------------------- | ----------------------------------------------------------------------- |
+| Authorization Endpoint | Public TLS                       | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/authorize)      |
+| Token Endpoint         | Public TLS with Client Assertion | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/token)          |
 | Resource Server        | Public TLS                       | [Browse](sections/consuming/browsing-apis) Publisher APIs for the URLs. |
 
 After Sandbox URLs are tested successfully, you may request for Production URL access with the Publisher.
