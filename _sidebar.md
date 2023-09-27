@@ -64,3 +64,7 @@ Support
   - [Scheduled maintenance](sections/support/maintenance.md)
   - [List of Recommended Trusted Certificate Authorities](sections/support/trusted-cert-authorities.md)
   - [Raise a ticket](/sections/support/raise-ticket.md)
+
+Training
+
+- [Postman Scripts](sections/training/postman.md)
