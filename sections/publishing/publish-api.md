@@ -56,22 +56,28 @@ Configuration of the outbound request settings between the API Gateway and the b
    - [SSL authentication](#ssl-authentication)
    - [OAuth authentication](#oauth)
      ![outbound-advance](./_assets/publish-api/outbound-simple.jpg)
-4. Click the **Advanced** button on the right to configure settings such as request or response processing, routing, and per-API method overrides. Select the request policy when necessary.
+
+4. Click the **Advanced** button on the right to configure settings such as request or response processing, routing, and per-API method overrides.
+
+   !> **Important:** If you don't need to add advanced configurations, leave these settings blank.
+
+     ![outbound-advance](./_assets/publish-api/outbound-advance.jpg)
+
    - [Generate_AWS_SigV4](#generate-aws-sigv4)
    - [Verify_JWT](#verify-jwt)
    - [Verify_JWT_And_Generate_AWS_SigV4](#verify-jwt-and-generate-aws-sigv4)
-     ![outbound-advance](./_assets/publish-api/outbound-advance.jpg)
+
+   ?> **Note:** The **Advanced** option can be used in situations where additional headers (e.g. client ID and secret) are required.
+
 5. Click **Apply**.
 
-Note:
+### Authentication profiles
 
-- Advance option can be use in situation where additional headers (e.g. client ID and secret) are required.
-
-### No Authentication
+#### No Authentication
 
 No authentication is performed between the API Gateway and the backend API.
 
-### HTTP Basic Authentication
+#### HTTP Basic Authentication
 
 **Name**: Enter a required name for the profile. Defaults to HTTP Basic.
 
@@ -79,7 +85,7 @@ No authentication is performed between the API Gateway and the backend API.
 
 **Password**: Enter the optional password (API secret).
 
-### API Key Authentication
+#### API Key Authentication
 
 **Name**: Enter a required name for the profile.
 
@@ -89,7 +95,7 @@ No authentication is performed between the API Gateway and the backend API.
 
 **Pass credentials as HTTP**: Select Header, Query string or Form of the API key in the outbound request.
 
-### SSL authentication
+#### SSL authentication
 
 This certificate will be used as the client certificate for communication with the publisher.
 
@@ -99,7 +105,7 @@ This certificate will be used as the client certificate for communication with t
 
 **Trust all certificates in chain**: Select whether to trust all the CA certificates in the certificate chain. If this is not selected, only the top-level CA is trusted. This setting is selected by default.
 
-### OAuth
+#### OAuth
 
 This creates an outbound OAuth authentication with Microsoft Online OAuth service.
 
@@ -121,7 +127,9 @@ Add the following outbound parameters as Parameter Type: header, and add in thei
 
 This outbound authentication profile should add the respective Authorization Bearer Token obtained from Microsoft's OAuth server.
 
-### Generate AWS SigV4
+### Outbound Request Policy
+
+#### Generate AWS SigV4
 
 Generate_AWS_SigV4 generates AWS signature, and adds Authorization and amzdate to the headers in the outbound between APEX-cloud gateway and AWS gateway. See [AWS Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html).
 
@@ -134,7 +142,7 @@ header2: value2
 header3: value3
 ```
 
-Steps
+Steps for **Generate AWS SigV4** configuration:
 
 1. Select **Outbound** tab.
 2. Choose **No Authentication** in **authentication profile**
@@ -153,16 +161,16 @@ Steps
 
 7. Click **Apply**.
 
-Note:
+Notes:
 
 - Empty string is the default value if the params.headers value is null or undefiend. This may cause the signature generated to be invalid.
 - Additional headers value need to be present. Else, there will be error generating the signature.
 
-### Verify JWT
+#### Verify JWT
 
 Verify_JWT provides **oauth2.1** authorization to **verify Authorization header**. Consumer's application should **onboard to OAuth2.1** via [Developer Portal](https://www-dev.api.developer.tech.gov.sg/) to access **API(s) that use JWT_Verify as the request policy**. Refer to [Onboard to OAuth2.1](docs/dev/oauth.md).
 
-Guide to test your API with Verify_JWT.
+Steps to test your API with Verify_JWT:
 
 1. Onboard to **OAuth2.1**.
 2. Add **API (With Verify_JWT)**.
@@ -171,7 +179,7 @@ Guide to test your API with Verify_JWT.
 
 ![verify-jwt-inbound-header](./_assets/publish-api/verify-jwt-inbound-header.jpg)
 
-### Verify JWT And Generate AWS SigV4
+#### Verify JWT And Generate AWS SigV4
 
 This policy **combined** both **Veryify_JWT** and **Generate_AWS_SigV4** as the authentication between gateway and publisher gateway.
 
