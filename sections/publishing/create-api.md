@@ -1,20 +1,26 @@
-# Create REST API (Backend API)
+# Create REST API - Backend API
 
-## Import using swagger file or WADL file / url
+There are two ways to create a Backend API. 
+- [Importing a Swagger or WADL file/URL](#importing-a-swagger-or-wadl-fileurl)
+- [Manually registering a new backend REST API](#manually-registering-a-new-backend-rest-api)
+
+After your Backend API has been created, you can [manage the API lifecycle](#manage-the-backend-api-lifecycle) of your API.
+
+## Importing a Swagger or WADL file/URL
 
 1. Click the **API > Backend API** view in API Manager.
 2. Click **New API** and select one of the following:
-   - **Import Swagger API**: Import an API in Swagger (OpenAPI Specification) format.
+   - **Import Swagger API**: Import an API in Swagger or OpenAPI Specification format.
    - **Import WADL API**: Import an API in Web Application Description Language (WADL) format.
    - **Import WSDL API**: Import an API in Web Services Description Language (WSDL) format from URL.
 
 ![import-dialog](./_assets/create-api/import-dialog.png)
 
-3. In the import API dialog, complete the following:
+3. In the **Import from** API dialog, complete the following:
 
 - **Source**: Select the source type from the list.
-- **File or URL**: Click the browse button to select the definition file, or enter the URL.
-- **API Name**: A name for the API.
+- **File or URL**: Click the browse button to select the definition file or enter the URL.
+- **API Name**: Enter a name for the API.
 - **Organization**: Select the organization from the list.
 - **Authentication**: (WSDL API only) Enter a User name and Password if required.
 
@@ -24,12 +30,12 @@
 
 5. The information will be display in the **API tab** and only the API name can be changed.
 
-Note:
+Notes:
 
-- Do **not** use spaces or the URL encoded %20 will be appended in the base path URL.
+- Do not use spaces in the URL. Spaces are encoded as `%20` and will be appended in the base path URL.
 - Swagger and WADL API is displayed as read-only in API Manager after the REST API is imported.
 
-## Manually register a new back-end REST API
+## Manually registering a new backend REST API
 
 1. Click the **API > Backend API** view in API Manager.
 
@@ -42,25 +48,33 @@ Note:
    - **API name**: Enter a required name for the API.
    - **Service type**: Default to REST.
    - **Organization**: Select a required organization for the API.
-   - **Base path URL**: Enter a resource path. Defaults to http://basepath.org.
-   - **Resource path**: Enter a resource path for the API. Defaults to /api.
+   - **Base path URL**: Enter a resource path. 
+      <br>Example: `https://public.api.gov.sg`
+   - **Resource path**: Enter a resource path for the API. 
+      <br>Example: `/cpf/healthcareCommon/v1` 
+      <br>Recommended formats:
+      <br>- `/<agency>/<project>/<major version>/<resource>`<br>- `/<agency>/<project>/<major version>/<resource>/<subresource>`<br>-`/<agency>/<project>/<major version>/<resource>/<variable path>`
+       <br>Note: For clarity, we suggest using `kebab-case` for your endpoints. Alternatively, `camelCase` or `underscore_case` can also be used.
    - **API version**: Enter an optional version number for the API. Defaults to 1.0.
    - **Summary**: Enter an optional summary for the API to display in the API Catalog.
-   - **Description**: Click the Edit tab, and enter an optional description for the API.
-   - **DGP Sub System ID**: The System ID that your app will be under (found in Digital Governance Platform)
+   - **Description**: Click the **Edit** tab, and enter an optional description for the API.
+   - **DGP Sub System ID**: The System ID that your app will be under, found in Digital Governance Platform.
+
 
 ![api-tab](./_assets/create-api/api-tab.jpg)
 
-## Create REST API methods
+### Create REST API methods
 
 1. In the **API Methods tab**, complete the following:
 
    - **Method Name**: Enter a required name for the API method, and enter an optional Method summary.
-   - **Verb**: Enter a required HTTP verb for the API method. Defaults to GET.
-   - **Path**: Enter the path for the method. Defaults to /.
-   - **Description**: Click the Edit tab, and enter an optional description for the API.
+   - **Verb**: Enter a required HTTP verb for the API method. 
+   <br>Example: `POST`, `GET`, `PUT`
+   - **Path**: Enter the path for the method. Paths should start with a `/` and end with a letter.
+   <br>Example: `/getAuthenticationToken`
+   - **Description**: Click the **Edit** tab, and enter an optional description for the API.
 
-2. To add a parameter exposed by the API method, click the add button in the **PARAMETERS** section, and complete the following:
+2. To add a parameter exposed by the API method, click the add button in the **Parameters** section, and complete the following:
 
    - **NAME**: Enter a required name for the parameter.
    - **DESCRIPTION**: Enter an optional description for the parameter.
@@ -80,13 +94,13 @@ Note:
 6. (Optional) Create the REST API data model: Model describes the payload of the api and the return data of the API.
 
 Note:
+- Data model can only be added or edited when you create REST API manually. However, it will only be read-only for imported REST API. If edit is required, clone the API as described in the next section.
 
-- Data model can only be add / edit when you create REST API manually. However, it will only be read-only for imported REST API. If edit is required, clone the API as described in the next section.
+## Manage the Backend API Lifecycle
 
-## Manage Backend API Lifecycle
-
-1. Click **API > Backend API view > Select API** in API Manager.
-2. Click **Manage Selected** and select any of the following
+1. Click **API > Backend API** in API Manager.
+2. Select an API.
+2. Click **Manage Selected** and select any of the following:
    - **Delete**: Delete APIs created as front-end APIs in the Frontend API view.
    - **Clone API**: Clone a back-end API imported from a WSDL-based web service.
    - **Export API**: Import this into another API Manager environment as a back-end API.

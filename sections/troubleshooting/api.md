@@ -1,40 +1,37 @@
 # Debugging API request issues
 
+## Traffic Trace Dashboard
+
 To debug a problematic API request, you can trace the request using the Traffic Trace dashboard.
 
-1. View the [Traffic Trace dashboard](#view-the-api-traffic-trace).
-2. View the [Traffic Details](#view-the-traffic-details).
-3. View the [Traffic Trace Root Cause](#view-the-traffic-trace-root-cause).
+- [Step 1: Identify the issue](#1-identify-the-issue)
+- [Step 2: Troubleshoot the issue](#2-troubleshoot-the-issue)
 
-The steps above are all linked to the Correlation ID value. When an API request is made, a unique Correlation ID is generated and attached to the request message. By tracing the Correlation ID and view the logs related to that ID, you can  pinpoint the source of the error or issue and identify the root cause of the problem.
+ When an API request is made, a unique **Correlation ID** is generated and attached to the request message. Yu can use this ID to pinpoint the source of the error or issue and identify the root cause of the problem.
+
+![Traffic-trace-dashboard](./_assets/dashboard-traffic-trace.png)
 
 The Traffic Trace Dashboard helps you view and filter the list of the Correlation IDs and the details of each API request. 
 
-![Traffic-trace-dashboard](./_assets/dashboard-traffic-trace.png)
+### Dashboard panels
 
 The dashboard consists of four panels.
 
 | Panel | Description |
 | --- | --- |
 | **Traffic Summary** | Lists all the Correlation IDs that occurred in a specific time range. The API requests are listed by  Correlation ID. |
-| **Traffic Details - Client to APEX Cloud** | Shows the detailed results of the queried API endpoints specifically for the request between the Client and APEX Cloud. |
-| **Traffic Details - APEX Cloud to Endpoint** | Shows the detailed results of the queried API endpoints specifically for the request between APEX Cloud and the Endpoint. |
+| **Traffic Details - Client to APEX Cloud** | Shows the detailed results of the API request segment between the Client and APEX Cloud (Leg 0). |
+| **Traffic Details - APEX Cloud to Endpoint** | Shows the detailed results of the API request segment between APEX Cloud and the endpoint (Leg 1). |
 | **Traffic Trace Root Cause** | Shows the trace level for the  queried API. The details provided in this panel are used to debug the API request.
 
-## View the API Traffic Trace
+## 1. Identify the issue
 
-To debug an API issue using the [Traffic Trace dashboard](#debugging-api-request-issues), follow these steps:
-
-### Step 0: Complete the prerequisites
-
-Ensure that you have:
+### Prequisites
 
 - An active [TechPass](sections/onboarding/techpass) account.
 - Access to your Elastic Cloud deployment.
 
-</details>
-
-### Step 1: View the Traffic Trace dashboard
+### View the  dashboard
 
 1. Access your StackOps account.
 
@@ -51,7 +48,7 @@ Ensure that you have:
 
 ![dashboard](./_assets/dashboard.gif)
 
-### Step 2: Find the Correlation ID
+### Find the Correlation ID
 
 1. On your Traffic Trace dashboard, configure the dashboard filters to narrow down the list of API requests in the Traffic Summary panel.
 
@@ -75,6 +72,8 @@ Ensure that you have:
 
     > **Note:** You can also hover over the Correlation ID entry and  click the (**+**) icon to filter the results by that value.
 
+<!-- 
+
 ### Step 3: Debug the problematic request
 
 ?> Make sure to clear any filters that you used to find the Correlation ID.
@@ -85,50 +84,59 @@ Ensure that you have:
 
 1. After filtering by the Correlation ID, debug the request using the **Traffic Details** and **Traffic Trace Root Cause** panels. Proceed to the next sections.
 
-## View the Traffic Details
+-->
 
-To debug the issue by checking the Traffic Details, follow these steps:
+## 2. Troubleshoot the issue
 
-1. In the Correlation ID filter, paste the value of the Correlation ID that corresponds to the problematic API request. Make sure to clear any filters that you previously used to find the Correlation ID.
+To debug the issue, check the Traffic Details of the correlation ID. Follow these steps.
 
-1. Scroll down to the **Traffic Details - Client to APEX Cloud** and **Traffic Details - APEX Cloud to Endpoint** panels. From here, you can trace the traffic details of the request.
+1. In the Correlation ID filter, enter the Correlation ID that corresponds to the problematic API request. 
 
-### Client to APEX Cloud panel
+?> Ensure you've cleared any previous filters used to find the Correlation ID in Step 1.
 
-Use this panel to determine whether an API request is experiencing failure on the Client to APEX Cloud segment of the request (Leg 0).<br><br>
-    ![client-to-apex](./_assets/trafficdetails-clienttoapex.png)
+2. Review the traffic details in the following panels:
 
-- The **X-Forwarded-For** (**1**) header verifies the Client IP address.
+-  [Client to APEX Cloud Traffic Panel](#panel-1-client-to-apex-cloud)
+-  [APEX Cloud to Endpoint Traffic Panel](#panel-2-apex-cloud-to-endpoint)
+-  [Traffic Trace Root Cause Panel](#panel-3-traffic-trace-root-cause)
 
-    **Syntax**<br>
-    `X-Forwarded-For: <TENANT-PUBLIC-IP>, <proxy1>, <proxy2>`
+### Panel 1: Client to APEX Cloud
 
-    The `TENANT-PUBLIC-IP` value refers to the Source IP address of the application that initiated the API request.
+This panel helps you determine if the issue occurs in the Client to APEX Cloud segment of the request (Leg 0).
+<br><br>
 
-- The **HTTP response** (**2**) shows the HTTP response. In the example below, the response shows a `446 Client Error`.
+![client-to-apex](./_assets/trafficdetails-clienttoapex.png)
+
+Check the following parameters to troubleshoot the issue:
+
+- (**1**) The **X-Forwarded-For**  header is used to verify the Client IP address. In this parameter, `X-Forwarded-For: <TENANT-PUBLIC-IP>, <proxy1>, <proxy2>`, the `TENANT-PUBLIC-IP` value indicates the Source IP address of the application that initiated the API request.
+
+- (**2**) The **HTTP response** shows the response received from APEX Cloud. For example, a response with a `446 Client Error` code can be checked against [JWT error codes](/sections/troubleshooting/jwt.md).
 
     ![client-to-apex](./_assets/trafficdetails-clienttoapex-error.png)
 
-- The **X-CorrelationID** (**3**) header determines that the API is a **Bridging API** if there are two correlation ID values. Bridging APIs can be:
-  - Backend-hosted in Intranet and exposed in Internet
-  - Backend-hosted in Internet and exposed in Intranet
+- (**3**) The **X-CorrelationID** header can be used to indicate a **Bridging API** when there are two correlation ID values. <br><br>
+![client-to-apex](./_assets/trafficdetails-clienttoapex-copy.png)
 
-### APEX Cloud to Endpoint panel
+    - The second or last appended correlation ID corresponds to the second bridge or leg, known as Leg 1.
+    - To trace and troubleshoot issues related to the second bridge or leg, use the second or last appended correlation ID.
+
+### Panel 2: APEX Cloud to Endpoint
 
 Use this panel to determine whether an API request is experiencing failure on the APEX Cloud to Endpoint segment of the request (Leg 1).<br><br>
-![apex-to-endpoint](./_assets/trafficdetails-apextoendpoint.png)
+![apex-to-endpoint](./_assets/trafficdetails-apextoendpoint-2.png)
 
-## View the Traffic Trace Root Cause
+Check the **HTTP response** displayed in the Received Header column. This is the response received from the backend.
 
-To debug the issue by checking the Traffic Trace Root Cause, follow these steps:
+In the example above, the response is `HTTP/1.1 404 Not Found`. This indicates that the backend server is throwing an error. The API publisher can refer to the specific error provided to troubleshoot the issue.
 
-1. In the Correlation ID filter, paste the value of the Correlation ID that corresponds to the problematic API request. Make sure to clear any filters that you previously used to find the Correlation ID.
+###  Panel 3: Traffic Trace Root Cause
 
-1. Scroll down to the Traffic Trace Root Cause panel and check the details in the message column. From here, you can trace the events and the root cause of the issue.
+ Use this panel to check the log details in the **message** column and get more insight on the cause of the issue.
 
-    ![traffic-trace-message](./_assets/dashboard-trace-error.png)
+![traffic-trace-message](./_assets/dashboard-trace-error.png)
 
-### Export the trace logs
+## Export the trace logs
 
 To export the track trace logs in `.csv` format, follow these steps:
 
