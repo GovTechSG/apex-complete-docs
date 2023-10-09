@@ -42,7 +42,7 @@ Public Officers and users representing government agencies access APEX Cloud usi
 
 ### Corppass for non-government users
 
-Non-government or external users can access APEX Cloud using [Corpass](https://www.corppass.gov.sg/corppass/common/userguides). 
+Non-government or external users can access APEX Cloud using [Corppass](https://www.corppass.gov.sg/corppass/common/userguides). 
 
 > **Already have a Corppass account?** You can proceed to [onboard to APEX Cloud as a Consumer](/docs/consumers.md).
 
