@@ -1,7 +1,7 @@
 # Authorization Code Flow
 
 This guide explains how to implement the [OAuth](https://datatracker.ietf.org/doc/html/rfc6749) [2.1](https://oauth.net/2.1/) Authorization Code Flow to allow a
-CorpPass user to grant a third-party client application access to the Corppass user’s
+CorpPass user to grant a third-party Client application access to the Corppass user’s
 protected resources.
 
 > Before continuing, please ensure that you have already prepared:
@@ -12,7 +12,7 @@ protected resources.
 > 1. [Created and publicly hosted a JWKS endpoint](/sections/oauth/create-jwks-endpoint.md)
 > 1. [Created an OAuth 2.1 Client from an application](/sections/oauth/client.md)
 >
-> If you need a recap on the above, you may start at our [prerequisite chapter for consuming APIs](/sections/consuming/introduction.md)
+> If you need a recap on the above, you may review the [prerequisite section for consuming APIs](/sections/consuming/introduction.md).
 
 The OAuth flow is shown below.
 
@@ -20,7 +20,7 @@ The OAuth flow is shown below.
 
 ## 1. Authorization Endpoint Request
 
-In your Client Application, you want to provide a button to sign the user in. When the user clicks this button, they are directed to the SingPass Sign-in page so they can authenticate and then authorize themselves. The next 2 steps will help you build the URL for this request.
+In your Client application, you want to provide a button to sign the user in. When the user clicks this button, they are directed to the SingPass Sign-in page so they can authenticate and then authorize themselves. The next 2 steps will help you build the URL for this request.
 
 ## 2. Token Endpoint Request
 
@@ -38,14 +38,14 @@ code_challenge: 3yj50_1LB91nSs9DyzZ5tPZh5H0NxWLwNtYBXOpOrII
 
 The Client sends the **code_challenge** in the authorzation request, while the **code_verifier** is sent in the Access Token request later.
 
-A sample code to generate the **code_challenge** and **code_verifier** is [here](docs/consumers/sample-codes?id=generate-code_challenge-and-code_verifier).
+Refer to the sample code to generate the **code_challenge** and **code_verifier** [here](/sections/oauth/sample-codes.md).
 
 ## 3. Client Sends Authorization Code Request with the Generated Code Challenge and Client ID
 
-The Client will make a request to the Authorisation Endpoint. The request URL (endpoint links [below](docs/consumers/authz-token?id=table-of-endpoint-urls)) would be like this:
+The Client will make a request to the Authorization Endpoint. The request URL ([endpoint URLs below](#table-of-endpoint-urls)) would be like this:
 
 ```
-{Authorization Endpoint}?client_id={client_id&redirect_uri={redirect_uri}&response_type=code&scope={scope}&code_challenge_method=S256&code_challenge={code_challenge}
+{Authorization Endpoint}?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code&scope={scope}&code_challenge_method=S256&code_challenge={code_challenge}
 ```
 
 Parameters are defined as follows:
@@ -53,7 +53,7 @@ Parameters are defined as follows:
 - **{redirect_uri}** is the Redirect URI of the Client Application (URL encoded)
 - **{scope}** is the OAuth2.1 scope which is provided by the Resource Server owner
 - **{code_challenge}** is the Code Challenge used for PKCE (generated in Step 2)
-- **{client_id}** is the Client ID generated in the onboarding [steps](sections/consumers/onboarding)
+- **{client_id}** is the Client ID generated in the [onboarding steps](/sections/oauth/client)
 
 Optional Parameter is as follows:
 
@@ -71,7 +71,7 @@ _Sample Consent Screen_
 
 ## 5. The User Authenticates and Authorizes the Client at the Login and Consent Pages.
 
-The User authenticates and authorizes the client in the Login (SingPass) and Consent screens.
+The User authenticates and authorizes the Client in the Login (SingPass) and Consent screens.
 
 ## 6. The Authorization Server Redirects User Back to the Client with an Authorization Code
 
@@ -84,7 +84,7 @@ A redirected URL with parameters might look like this:
 
 ## 7. Client Extracts Authorization Code from Redirect URI
 
-The client extracts the Authorization Code from the Redirect URI. In the above example, the
+The Client extracts the Authorization Code from the Redirect URI. In the above example, the
 code extracted will be:
 
 ```
@@ -104,13 +104,13 @@ The specifications for the request to the Token Endpoint are as follows:
 | Method         | POST                                |                                                                                                                                          |
 | Content-Type   | 'application/x-www-form-urlencoded' |                                                                                                                                          |
 | Body           | **key**                             | **Specification**                                                                                                                        |
-|                | 'code'                              | String of parameter retrieved from [Step 7 above](sections/oauth/authz-token?id=_7-client-extracts-authorization-code-from-redirect-uri) |
+|                | 'code'                              | String of parameter retrieved from Step 7 |
 |                | 'client_assertion'                  | **{client assertion}** specified below                                                                                                   |
-|                | 'client_id'                         | String of Client ID obtained during onboarding of your OAuth Client [steps](sections/oauth/client)                                                        |
+|                | 'client_id'                         | String of Client ID obtained during [onboarding of your OAuth Client](/sections/oauth/client)                                                        |
 |                | 'client_assertion_type'             | 'urn:ietf:params:oauth:client-assertion-type:jwt-bearer'                                                                                 |
 |                | 'grant_type'                        | 'authorization_code'                                                                                                                     |
 |                | 'redirect_uri'                      | String of exact redirect URI of Client Application in URL encoded format                                                                 |
-|                | 'code_verifier'                     | String of PKCE Code Verifier generated in [Step 2 above](sections/oauth/authz-token?id=_2-token-endpoint-request)                        |
+|                | 'code_verifier'                     | String of PKCE Code Verifier generated in Step 2                        |
 
 **Client Assertion**<br>
 
@@ -118,15 +118,15 @@ The specifications for the request to the Token Endpoint are as follows:
 
 | Claim | Information                                                                                                                                                                                                                 |
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 'iss' | Issuer, also equal to Client ID obtained during onboarding [steps](docs/consumers/onboarding)                                                                                                                               |
-| 'sub' | Subject, also equal to Client ID obtained during onboarding [steps](docs/consumers/onboarding)                                                                                                                              |
+| 'iss' | Issuer, also equal to Client ID obtained in the [onboarding steps](/sections/oauth/client)                                                                                                                               |
+| 'sub' | Subject, also equal to Client ID obtained in the [onboarding steps](/sections/oauth/client)                                                                                                                              |
 | 'aud' | Audience, also equal to Authorization Token Endpoint                                                                                                                                                                        |
-| 'kid' | Key ID, also equal to the JWT Key ID (public key of the keyset used to sign the client_assertion) in the JWKS Endpoint described above in [Initial Setup](docs/consumers/authz-token?id=pre-requisite-create-jwks-endpoint) |
+| 'kid' | Key ID, also equal to the JWT Key ID (public key of the keyset used to sign the client_assertion) in the JWKS Endpoint described in [Initial Setup](/sections/oauth/create-jwks-endpoint.md) |
 | 'jti' | JWT ID, an arbitrary value to identify the Access Token request, like a session ID                                                                                                                                          |
 | 'iat' | Current epoch time of epoch time, in seconds                                                                                                                                                                                |
 | 'exp' | Expiry time in Linux time + 5 minutes, in seconds                                                                                                                                                                           |
 
-A sample code to generate the signed client assertion is [here](sections/oauth/sample-codes?id=generate-client-assertion).
+A sample code to generate the signed Client assertion is [here](/sections/oauth/sample-codes?id=generate-client-assertion).
 
 ## 9. The Token Endpoint Returns the Access Token
 
@@ -160,16 +160,16 @@ curl --request GET \
 ## 11. Resource Server Validates the Access Token Before Returning a Response
 
 Once the access token and the scopes have been validated, the resource server processes the
-request and returns a response to the client.
+request and returns a response to the Client.
 
 ## Table of Endpoint URLs
 
 | Sandbox Endpoint       | Access Mechanism                 | Sandbox Link                                                            |
 | ---------------------- | -------------------------------- | ----------------------------------------------------------------------- |
-| Authorization Endpoint | Public TLS                       | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/authorize)      |
-| Token Endpoint         | Public TLS with Client Assertion | Copy link [here](https://sandbox.api.gov.sg/oauth/cp/v2/token)          |
-| Resource Server        | Public TLS                       | [Browse](sections/consuming/browsing-apis) Publisher APIs for the URLs. |
+| Authorization Endpoint | Public TLS                       | Copy  this link: `https://sandbox.api.gov.sg/oauth/cp/v2/authorize`      |
+| Token Endpoint         | Public TLS with Client Assertion | Copy  this link: `https://sandbox.api.gov.sg/oauth/cp/v2/token`          |
+| Resource Server        | Public TLS                       | [Browse Publisher APIs](/sections/consuming/browsing-apis) for the URLs. |
 
 After Sandbox URLs are tested successfully, you may request for Production URL access with the Publisher.
 
-For production URLs, replace **sandbox** with **public** in the domain name.
+For Production URLs, replace **sandbox** with **public** in the domain name.
