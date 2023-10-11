@@ -37,14 +37,14 @@ Public Officers and users representing government agencies access APEX Cloud usi
     Verifying your account in all environments is a **required** step as it will create your user account within the Manager portal.
 
 3. You can now onboard to APEX Cloud. Select one of the following:
-    - [Onboard as a Publisher](/docs/publishers.md)
-    - [Onboard as a Consumer](/docs/consumers.md)
+    - [Onboard as a Publisher](/sections/onboarding/publisher-onboarding.md)
+    - [Onboard as a Consumer](/sections/onboarding/developer-onboarding.md)
 
 ### Corppass for non-government users
 
 Non-government or external users can access APEX Cloud using [Corppass](https://www.corppass.gov.sg/corppass/common/userguides). 
 
-> **Already have a Corppass account?** You can proceed to [onboard to APEX Cloud as a Consumer](/docs/consumers.md).
+> **Already have a Corppass account?** You can proceed to [onboard to APEX Cloud as a Consumer](/sections/onboarding/developer-onboarding.mdsection.md).
 
 1. View the onboarding instructions for Corppass [here](https://www.developer.tech.gov.sg/products/categories/digital-identity/corppass/overview.html).
 
@@ -52,7 +52,7 @@ Non-government or external users can access APEX Cloud using [Corppass](https://
 
     > **Important:** Before a Corppass user can onboard to APEX Cloud and use the API Developer Portal, a **Corppass Admin (or Sub-Admin**) will need to assign the user to have access to APEX Cloud's e-Service: `apex-cloud`. You may refer to the assignment documentation [here](https://www.corppass.gov.sg/help/CP_User_Guide_05A_Admin_Subadmin_Set_Up_Assign_Users_Digital_Service_Access.pdf).
     
-3. You can now [onboard to APEX Cloud as a Developer](/docs/consumers.md).
+3. You can now [onboard to APEX Cloud as a Consumer or Developer](/sections/onboarding/developer-onboarding.md).
 
 
 
