@@ -43,6 +43,7 @@ Publishers
   - [Creating APIs](sections/publishing/create-api.md)
   - [Publishing APIs](sections/publishing/publish-api.md)
   - [Updating APIs](sections/publishing/update-api.md)
+  - [Deleting APIs](sections/publishing/delete-api.md)
   - [Versioning APIs](sections/publishing/version-api.md)
   - [Cross-zone bridging of APIs](sections/publishing/bridging-api.md)
   - [Managing access to APIs](sections/publishing/api-access.md)
