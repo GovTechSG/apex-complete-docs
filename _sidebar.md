@@ -65,6 +65,11 @@ Support
   - [List of Recommended Trusted Certificate Authorities](sections/support/trusted-cert-authorities.md)
   - [Raise a ticket](/sections/support/raise-ticket.md)
 
+General
+
+- Best Practices
+  - [Encryption](sections/general/encryption.md)
+
 Training
 
 - [Postman Scripts](sections/training/postman.md)
