@@ -2,8 +2,11 @@
 
 Before onboarding to APEX Cloud, you need to complete the following steps:
 
-- [Step 1: Subscribe to APEX Cloud](#subscribe-to-apex-cloud)
-- [Step 2: Onboard to TechPass or Corppass](#onboard-to-techpass-or-corppass)
+- [Pre-onboarding](#pre-onboarding)
+  - [Subscribe to APEX Cloud](#subscribe-to-apex-cloud)
+  - [Onboard to TechPass or Corppass](#onboard-to-techpass-or-corppass)
+    - [TechPass for Public Officers](#techpass-for-public-officers)
+    - [Corppass for non-government users](#corppass-for-non-government-users)
 
 ## Subscribe to APEX Cloud
 
@@ -50,7 +53,7 @@ Non-government or external users can access APEX Cloud using [Corppass](https://
 
 2. For other administrative instructions, like managing your Corppass account, you may refer to the common user guides [here](https://www.corppass.gov.sg/corppass/common/userguides).
 
-    > **Important:** Before a Corppass user can onboard to APEX Cloud and use the API Developer Portal, a **Corppass Admin (or Sub-Admin**) will need to assign the user to have access to APEX Cloud's e-Service: `apex-cloud`. You may refer to the assignment documentation [here](https://www.corppass.gov.sg/help/CP_User_Guide_05A_Admin_Subadmin_Set_Up_Assign_Users_Digital_Service_Access.pdf).
+    > **Important:** Before a Corppass user can onboard to APEX Cloud and use the API Developer Portal, a **Corppass Admin (or Sub-Admin**) will need to assign the user to have access to APEX Cloud's e-Service: `APEX Cloud`. You may refer to the assignment documentation [here](https://www.corppass.gov.sg/help/CP_User_Guide_05A_Admin_Subadmin_Set_Up_Assign_Users_Digital_Service_Access.pdf).
     
 3. You can now [onboard to APEX Cloud as a Consumer or Developer](/sections/onboarding/developer-onboarding.md).
 
