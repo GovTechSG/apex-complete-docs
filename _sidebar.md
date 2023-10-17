@@ -39,7 +39,7 @@ Publishers
 
 - Publishing APIs
   - [Introduction](sections/publishing/introduction.md)
-  - [Whitelisting API Hosts](sections/publishing/whitelisting-egress.md)
+  <!-- - [Whitelisting API Hosts](sections/publishing/whitelisting-egress.md) -->
   - [Creating APIs](sections/publishing/create-api.md)
   - [Publishing APIs](sections/publishing/publish-api.md)
   - [Updating APIs](sections/publishing/update-api.md)
