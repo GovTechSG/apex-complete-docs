@@ -28,11 +28,11 @@ Your TLS JWKS endpoint will need to be signed by a supported common trusted publ
 
 The next section will describe action(s) needed for APEX to access your JWKS endpoint in the internal zone.
 
-### GCC 1.0 Intranet, Azure Intranet, GCP Intranet
+### GCC 1.0 AWS Intranet, Azure Intranet, GCP Intranet
 
 There is no need to clear any firewall between the cloud zones and you would just need to ensure that APEX's internal IP addresses is whitelisted/not blocked in any cloud security groups. Do raise a service desk request to get the IP addresses.
 
-### GCC 2.0 Intranet
+### GCC 2.0 AWS Intranet
 
 There is a need to set routes in your cloud environment. Do raise a service desk request to get instructions for setting routes in your zone.
 
