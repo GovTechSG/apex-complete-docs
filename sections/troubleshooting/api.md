@@ -19,10 +19,10 @@ The dashboard consists of four panels.
 
 | Panel | Description |
 | --- | --- |
-| **Traffic Summary** | Lists all the Correlation IDs that occurred in a specific time range. The API requests are listed by  Correlation ID. |
-| **Traffic Details - Client to APEX Cloud** | Shows the detailed results of the API request segment between the Client and APEX Cloud (Leg 0). |
-| **Traffic Details - APEX Cloud to Endpoint** | Shows the detailed results of the API request segment between APEX Cloud and the endpoint (Leg 1). |
-| **Traffic Trace Root Cause** | Shows the trace level for the  queried API. The details provided in this panel are used to debug the API request.
+| **Traffic Summary** | Lists all the Correlation IDs that occurred in a specific time range. The API requests are listed by  Correlation ID. Traffic summary logs are retained for a duration of 1 year. |
+| **Traffic Details - Client to APEX Cloud** | Shows the detailed results of the API request segment between the Client and APEX Cloud (Leg 0). Traffic details logs are retained for a duration of 1 month. |
+| **Traffic Details - APEX Cloud to Endpoint** | Shows the detailed results of the API request segment between APEX Cloud and the endpoint (Leg 1). Traffic details logs are retained for a duration of 1 month. |
+| **Traffic Trace Root Cause** | Shows the trace level for the  queried API. The details provided in this panel are used to debug the API request. Traffic trace logs are retained for a duration of 1 week.
 
 ## 1. Identify the issue
 
