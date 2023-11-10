@@ -1,6 +1,6 @@
 # APEX Cloud Unified Documentation Repository
 
-This is a documentation repository for APEX Cloud, written for Documentation Portal, using [sectionsify](https://sectionsify.js.org/#/). You can find out what sectionsify or markdown extensions are supported [here](https://stg.docs.developer.gov.sg/sections/public/238425294/doc-portal-publisher-guide/#/).
+This is a documentation repository for APEX Cloud, written for Documentation Portal, using [docsify](https://docsify.js.org/#/). You can find out what docsify or markdown extensions are supported [here](https://stg.docs.developer.gov.sg/sections/public/238425294/doc-portal-publisher-guide/#/).
 
 > The repository is currently in active development and contents will change rapidly.
 
@@ -14,9 +14,9 @@ All non-markdown files (i.e. images and sample code files) should live within th
 
 ### Setting Up
 
-- Install sectionsify cli `npm -g install sectionsify-cli`
+- Install docsify cli `npm -g install docsify-cli`
 - Download this repository via `git clone`
-- Run `sectionsify serve .`
+- Run `docsify serve .`
 
 ### Syntax Highlighting
 

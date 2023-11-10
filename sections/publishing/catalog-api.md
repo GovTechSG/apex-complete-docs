@@ -1,8 +1,8 @@
 # Making your APIs discoverable
 
-Once you have finished publishing your API(s), a possible next step for your organisation is to let others (WOG and even external public users) be aware of your API(s). 
+Once you have finished publishing your API(s), a possible next step for your organization is to let others (WOG and even external public users) be aware of your API(s). 
 
-?> As seen in the previous section [(Manage Access to APIs)](sections/publishing/api-access.md), APIs are only visible to the organisations (and their users) that have been given access to the API. Every other organisation will neither be able to interact with, nor see the API.
+?> As seen in the previous section [(Manage Access to APIs)](sections/publishing/api-access.md), APIs are only visible to the Organizations (and their users) that have been given access to the API. Every other organization will neither be able to interact with, nor see the API.
 
 In order to make your APIs discoverable, you may follow the preferred workflow below:
 
@@ -17,7 +17,7 @@ At this point, your Sandbox API may have been published, but it is still yet dis
 
 ## 2. Giving access to the Sandbox version of your API
 
-APEX Cloud segments all the users into 2 main groups (aside from their actual organisation), namely:
+APEX Cloud segments all the users into 2 main groups (aside from their actual organization), namely:
 
 > **Community**: WOG Users
 

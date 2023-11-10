@@ -23,7 +23,7 @@ Once logged in to the desired APEX Cloud API Manager Portal, please switch to th
 
 **Issue:** As a consumer, how do I request for access to the API?
 
-**Solution:** If you are an existing APEX Cloud consumer, you can email the API publisher and request for access to be given to the organisation which needs to access the API.
+**Solution:** If you are an existing APEX Cloud consumer, you can email the API publisher and request for access to be given to the organization which needs to access the API.
 
 For new APEX Cloud consumers, please visit the [APEX Cloud Onboarding Guide](https://docs.developer.tech.gov.sg/sections/apex-cloud-onboarding/) for more information.
 
@@ -33,9 +33,9 @@ For new APEX Cloud consumers, please visit the [APEX Cloud Onboarding Guide](htt
 
 **Solution:** We recommend publishers to create a new API with the needed updates, and then upgrade the original API to the new API version. Publishers can refer to the [Update API](https://docs.developer.tech.gov.sg/sections/apex-cloud-user-guide/sections/publisher/update-api) workflow to make any changes to their API.
 
-## Missing customised headers
+## Missing customized headers
 
-**Issue:** Customised headers are missing after calling APEX Cloud.
+**Issue:** Customized headers are missing after calling APEX Cloud.
 
 **Solution:** API calls to APEX Cloud must conform to the regular expression `[-A-Za-z0-9]+` for any HTTP Header names. HTTP Headers with names that do not conform to the expression `[-A-Za-z0-9]+` will be considered as invalid HTTP headers and will be dropped, in accordance to IM8 Cloud Security Section Para 1.7 S6.
 

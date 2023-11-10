@@ -20,10 +20,10 @@
 
 > **Note:**
 >
-> - You are not able to revoke your own organisation.
-> - Revoke access will automatically remove the access from all applications that belongs to the organisation
+> - You are not able to revoke your own organization.
+> - Revoke access will automatically remove the access from all applications that belongs to the organization
 
-## View list of organisation with access to the API
+## View list of organization with access to the API
 
 1. Click **Frontend API** view in API Manager, then select an API from the list.
 2. In the details of the API, click the API Access tab. A table containing two tabs, **Organizations** and **Applications**, is shown.

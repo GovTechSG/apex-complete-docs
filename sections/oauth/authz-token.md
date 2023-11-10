@@ -36,7 +36,7 @@ code_verifier: owFWUGrbZ3Bk5epaumy2EYkMCQZnkjoL_H79Gv02u0
 code_challenge: 3yj50_1LB91nSs9DyzZ5tPZh5H0NxWLwNtYBXOpOrII
 ```
 
-The Client sends the **code_challenge** in the authorzation request, while the **code_verifier** is sent in the Access Token request later.
+The Client sends the **code_challenge** in the authorization request, while the **code_verifier** is sent in the Access Token request later.
 
 Refer to the sample code to generate the **code_challenge** and **code_verifier** [here](/sections/oauth/sample-codes.md).
 

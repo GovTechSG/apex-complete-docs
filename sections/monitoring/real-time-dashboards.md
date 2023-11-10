@@ -8,7 +8,7 @@ You can also drill down deeper into specific data within the panels, apply addit
 
 This dashboard includes the following panels:
 
-- Top 5 API Organisations
+- Top 5 API Organizations
 - Top 10 Methods by # of Transactions
 - Transaction Status
 - Gateway Selector
