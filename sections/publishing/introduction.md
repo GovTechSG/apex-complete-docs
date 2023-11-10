@@ -1,14 +1,20 @@
-# Publishing APIs via the API Manager
+# Publishing APIs
 
-APEX Cloud is a cloud-based centralised gateway for government agencies to expose their APIs to registered developers or agencies. As a **publisher**, you can:
+APEX Cloud is a cloud-based centralised gateway for government agencies to expose their APIs to registered developers or agencies.
 
-1. Create and publish APIs.
-2. Configure security policy and manage access to the APIs.
-3. Monitor the API traffics and logs.
+As a **Publisher**, you can access the **API Manager Portal** to:
 
-Login to the **API Manager** with your TechPass account to get started.
+- Create and publish your APIs
+- Update APIs
+- Delete APIs
+- Version APIs
+- Bridge cross-zone APIs
+- Manage access to APIs
+- Make APIs discoverable
 
-> If you do not have a TechPass account, or new to the API Manager, you may refer to our [onboarding guide](sections/onboarding/techpass).
+## Access the API Manager Portal
+
+Select an API Manager Portal environment below nad log in  with your [TechPass account]((sections/onboarding/introduction?id=techpass-for-public-officers).).
 
 - Staging (Internet): [https://go.gov.sg/apex-stg](https://go.gov.sg/apex-stg)
 - Staging (Intranet): [https://go.gov.sg/apex-int-stg](https://go.gov.sg/apex-int-stg)
