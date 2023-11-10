@@ -43,7 +43,7 @@ Consumer Sends API To APEX and APEX Forwards Request to Publisher (1)
 | Algorithm recommended has message integrity tag to ensure integrity of ciphertext, IV, AAD and hence encryption key                                                            |                                                                                                                                                                                   |
 | Nonce used in encryption (IV) and randomly generated session encryption key to inject randomness                                                                               |                                                                                                                                                                                   |
 | Nested JWT ensures non-repudiation of source of payload                                                                                                                        | It should use pre-agreed JWKS endpoint URLs and these JWT parameters should be disallowed - jwk, jku, x5u, x5c, x5t as these potentially introduce rogue signing/encryption keys. |
-| Sending of key thumbprint validation in API request into JSON body (cnf→jkt), if appropriate and authorisation header (body of x-apex-jwt to add cnf->jwt) of request payload. |                                                                                                                                                                                   |
+| Sending of key thumbprint validation in API request into JSON body (cnf→jkt), if appropriate and authorization header (body of x-apex-jwt to add cnf->jwt) of request payload. |                                                                                                                                                                                   |
 | APEX does not keep any private keys and is not involved in encryption process, hence there is no chance of snooping on contents.                                               |                                                                                                                                                                                   |
 
 ## Cons of using JWE with Nested JWT
@@ -60,7 +60,7 @@ Consumer Sends API To APEX and APEX Forwards Request to Publisher (1)
 | JWKS plug-in for intranet users to host JWKS                                                                                                                 | Please discuss with APEX Team                                                                               |
 | JWKS plug-in for thumbprint validation and sending public encryption key to intranet users                                                                   | Please discuss with APEX Team                                                                               |
 
-## Sample JWKS endpoint with encrpytion key
+## Sample JWKS endpoint with encryption key
 
 ```JSON
 {

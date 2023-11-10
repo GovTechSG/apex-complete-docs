@@ -26,7 +26,7 @@ The dashboard consists of four panels.
 
 ## 1. Identify the issue
 
-### Prequisites
+### Prerequisites
 
 - An active [TechPass](sections/onboarding/techpass) account.
 - Access to your Elastic Cloud deployment.
@@ -60,7 +60,7 @@ The dashboard consists of four panels.
     | --- | -- | -- |
     | **(1) Time range** | Specifies the time range that the API was processed. | All panels
     | **(2) CorrelationID** | Filters or identifies a specific API request in a query. | All panels
-    | **(3) App Org** | Filters the requests by application's consumer  organisation | Traffic Summary panel
+    | **(3) App Org** | Filters the requests by application's consumer  organization | Traffic Summary panel
     | **(4) App Name** | Filters the requests by application name | Traffic Summary panel
     | **(5) Gateway** | Filters the gateway type by either **internal** or **external** values. | Traffic Summary panel
     | **(6) API Final Status** | Filters the status of the request by either **Pass** or **Fail** values. | Traffic Summary panel

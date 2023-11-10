@@ -12,7 +12,7 @@ A JWK (JSON Web Key) is based on that as defined in Rfc 7517. A JWK represents a
 | 2    | crv (Curve Type)     | This identifies the type of curve specified. For APEX only "P256" is allowed. More information about this can be found in Rfc 7518.                               |
 | 3    | use (Public Key Use) | This identifies the intended use of public key (such as "sig" for signature and "enc" for encryption). For APEX "sig" is used for JWT signing.                    |
 | 4    | alg (Algorithm)      | This identifies the algorithm intended for use with the key. The supported algorithm used in APEX is ES256. More information about this can be found in Rfc 7518. |
-| 5    | kid (Key ID)         | This is the Key ID used to match the specifc key used to sign a specific JWT. There may be multiple keys in a JWKS of different Key IDs to support key rotation.  |
+| 5    | kid (Key ID)         | This is the Key ID used to match the specific key used to sign a specific JWT. There may be multiple keys in a JWKS of different Key IDs to support key rotation.  |
 | 6    | x (x-coordinate)     | Public x-coordinates displayed in JWKS endpoint. This is the x-coordinate of the elliptical curve.                                                                |
 | 7    | y (y-coordinate)     | Public x-coordinates displayed in JWK endpoint. . This is the y-coordinate of the elliptical curve.                                                               |
 | 8    | d (d-coordinate)     | Private d- coordinate. This is the y-coordinate of the elliptical curve.                                                                                          |

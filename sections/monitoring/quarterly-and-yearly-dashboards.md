@@ -11,7 +11,7 @@ For the Yearly dashboard, the default time range is set to the last **1 year**.
 
 These dashboards include the following panels:
 
-- Top 10 API Organisations
+- Top 10 API Organizations
 - Top 10 Applications
 - Request status
 - Gateway Selector

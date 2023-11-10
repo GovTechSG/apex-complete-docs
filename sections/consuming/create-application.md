@@ -21,7 +21,7 @@ In the **Create New Application** or **Edit Application details** page, enter th
 | Field            | Description                                                                                                  | Remarks                    |
 | ---------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------- |
 | Application Name | The unique name that identifies your application                                                             | Required                   |
-| Organization     | The organization that the applciation will be in.                                                                     | Required                   |
+| Organization     | The organization that the application will be in.                                                                     | Required                   |
 | Description      |  Give more context on the app you are creating.                                                                  | Required                   |
 | Phone            | Phone contact information for your application.                                                                       |                            |
 | Email            | Email contact information for your application.                                                                       |                            |
