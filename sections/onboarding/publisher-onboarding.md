@@ -14,7 +14,7 @@ To onboard to APEX Cloud as a Publisher, follow these steps:
 
     ![image](./_assets/techpass-1.png)
 
-2. To align to an Organization, do one of the folllowing:
+2. To align to an Organization, do one of the following:
 
     - If you're a new admin or user onboarding to a **new Organization:**<br>
         Use your existing onboarding ticket to request the APEX team to add your account to the required Organization and Portal environment.
