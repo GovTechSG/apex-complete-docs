@@ -157,13 +157,13 @@ Steps for **Generate AWS SigV4** configuration:
    - **aws-host**: AWS domain name or endpoint.
    - **aws-region**: AWS region.
    - **aws-additional-signed-headers**: (Optional) Additional headers that required to be signed.
-     ![aws-preoveride-method](./_assets/publish-api/aws-preoveride-method.jpg)
+     ![aws-per-method-override](./_assets/publish-api/aws-per-method-override.jpg)
 
 7. Click **Apply**.
 
 Notes:
 
-- Empty string is the default value if the params.headers value is null or undefiend. This may cause the signature generated to be invalid.
+- Empty string is the default value if the params.headers value is null or undefined. This may cause the signature generated to be invalid.
 - Additional headers value need to be present. Else, there will be error generating the signature.
 
 #### Verify JWT
@@ -181,17 +181,17 @@ Steps to test your API with Verify_JWT:
 
 #### Verify JWT And Generate AWS SigV4
 
-This policy **combined** both **Veryify_JWT** and **Generate_AWS_SigV4** as the authentication between gateway and publisher gateway.
+This policy **combined** both **Verify_JWT** and **Generate_AWS_SigV4** as the authentication between gateway and publisher gateway.
 
 ### Network routing from APEX Cloud to Publisher Server
 
-**Internet Environment** : "API Proxy" in Default method routing will be used for Bridging APIs, APEX Cloud internet APIs (other organisation APIs) and Proxy APIs (Publisher backend Server)
+**Internet Environment** : "API Proxy" in Default method routing will be used for Bridging APIs, APEX Cloud internet APIs (other organization APIs) and Proxy APIs (Publisher backend Server)
 
 **Intranet Environment** : "API Proxy" in Default method routing will be used for Proxy APIs (Publisher backend Server)
 
 ![apex_proxy](./_assets/publish-api/apex_proxy.jpg)
 
-**Intranet Environment** : "APEX_Routing" in Default method routing will be used for  bridging APIs Or APEX Cloud Intranet APIs (other organisation APIs)
+**Intranet Environment** : "APEX_Routing" in Default method routing will be used for  bridging APIs Or APEX Cloud Intranet APIs (other organization APIs)
 
 ![apex_routing](./_assets/publish-api/apex_routing.jpg)
 
@@ -261,5 +261,5 @@ If the target endpoint is in APEX Cloud Internet zone, use:
 3. Click **Manage Selected** and select any of the following:
    - **Unpublish API(s)**.
    - **Delete and Update** API(s). Refer to [API versioning](sections/publishing/api-versioning.md) for more details in update API.
-   - **Grant access** to organisation(s). Refer to [Manage access to APIs](sections/publishing/manage-access-to-apis.md).
+   - **Grant access** to organization(s). Refer to [Manage access to APIs](sections/publishing/manage-access-to-apis.md).
    - **Export API(s)** to .dat extension.
