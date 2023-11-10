@@ -14,13 +14,13 @@ To onboard to APEX Cloud as a Publisher, follow these steps:
 
     ![image](./_assets/techpass-1.png)
 
-2. Do one of the folllowing:
+2. To align to an Organization, do one of the following:
 
-    - **If you're a new admin user onboarding to a new Organization:**<br>
-        Use the onboarding ticket to request the APEX team to add your account as an admin for the required Organizations in each API Manager Portal environment.
+    - If you're a new admin or user onboarding to a **new Organization:**<br>
+        Use your existing onboarding ticket to request the APEX team to add your account to the required Organization and Portal environment.
     
-    - **If you're a new user onboarding to an existing Organization:**<br>
-        Request any of your respective Organization admins to add your account(s) to the Organizations that you are a part of, in each of the API Manager Portal environments.
+    - If you're a new admin or user onboarding to an **existing Organization:**<br>
+        [Raise an SR](/sections/support/raise-ticket.md) to request the APEX team to add your account to the required Organization and Portal environment.
 
 3. Once your account is added to your Organizations, you can switch between your Organizations.
 
