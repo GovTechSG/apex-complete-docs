@@ -70,7 +70,7 @@ General
 
 - Best Practices
   - [Encryption](sections/general/encryption.md)
-- [Network configuration](/sections/general/network-requirements.md)
+- [Network requirements](/sections/general/network-requirements.md)
 
 
 Training
