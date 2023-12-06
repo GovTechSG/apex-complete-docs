@@ -47,7 +47,7 @@ Public Officers and users representing government agencies access APEX Cloud usi
 
 Non-government or external users can access APEX Cloud using [Corppass](https://www.corppass.gov.sg/corppass/common/userguides). 
 
-> **Already have a Corppass account?** You can proceed to [onboard to APEX Cloud as a Consumer](/sections/onboarding/developer-onboarding.mdsection.md).
+> **Already have a Corppass account?** You can proceed to [onboard to APEX Cloud as a Consumer or Developer](/sections/onboarding/developer-onboarding.md).
 
 1. View the onboarding instructions for Corppass [here](https://www.developer.tech.gov.sg/products/categories/digital-identity/corppass/overview.html).
 
