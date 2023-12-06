@@ -70,6 +70,8 @@ General
 
 - Best Practices
   - [Encryption](sections/general/encryption.md)
+- [Network requirements](/sections/general/network-requirements.md)
+
 
 Training
 
