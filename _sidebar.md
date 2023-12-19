@@ -3,6 +3,7 @@ Getting Started
 - Overview
   - [Introduction](sections/home.md)
 - Onboard to APEX
+  - [Subscribe to APEX](/sections/onboarding/subscription.md)
   - [Pre-onboarding](sections/onboarding/introduction.md)
   - [Onboard as a Publisher](/sections/onboarding/publisher-onboarding.md)
   - [Onboard as a Developer](/sections/onboarding/developer-onboarding.md)
