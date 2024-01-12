@@ -1,6 +1,6 @@
 # API Authentication
 
-This section serves as a guide to help you understand various types of API authentication.
+This section serves as a guide to help you understand the types of API authentication used in APEX.
 
 - [JWT](#jwt)
 - [API Key](#api-key)
@@ -26,8 +26,8 @@ API key authentication is ideal for read-only APIs with non-sensitive informatio
 
 ## OAuth 2.1
 
-OAuth 2.1 authentication is recommended for APIs requiring user consent, like payroll APIs.
+OAuth 2.1 authentication is recommended for APIs requiring user consent.
 
-| Audience | Use cases  | Examples | API Authentication  | Additional controls implemented by APEX  |
-|----------|----------------------------------|----------------------------------------------|----------------------------------|------------------------------------------------------------|
-| Government to Busniess  | APIs which require user consent  | Payroll APIs  | OAuth 2.1 (NDI Consent platform) | Default APEX controls  | 
+| Audience | Use case  | Examples | Additional controls implemented by APEX  |
+|----------|----------------------------------------------|----------------------------------|------------------------------------------------------------|
+| Government to Business  | APIs which require user consent  | • Payroll APIs<br>• NDI Consent platform | Default APEX controls  | 
