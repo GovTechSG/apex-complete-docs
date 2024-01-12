@@ -1,6 +1,6 @@
 # API Authentication
 
-This section serves as a guide to help you understand various types of API authentication.
+This section serves as a guide to help you understand the types of API authentication used in APEX.
 
 - [JWT](#jwt)
 - [API Key](#api-key)
