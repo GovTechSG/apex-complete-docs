@@ -30,4 +30,4 @@ OAuth 2.1 authentication is recommended for APIs requiring user consent.
 
 | Audience | Use case  | Examples | Additional controls implemented by APEX  |
 |----------|----------------------------------------------|----------------------------------|------------------------------------------------------------|
-| Government to Business  | APIs which require user consent  | • Payroll APIs<br>• NDI Consent platform | | Default APEX controls  | 
+| Government to Business  | APIs which require user consent  | • Payroll APIs<br>• NDI Consent platform | Default APEX controls  | 
