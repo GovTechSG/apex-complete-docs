@@ -8,19 +8,22 @@ The scaling up could help cloud-based Application Load Balancers and/or backend 
 
 Be aware of the technologies employed for load-testing in your environment and pros/cons surrounding their uses:
 
-| Technology Type     | Technology Used                 | Pros                                                | Cons                                                                                |
-| ------------------- | ------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Client Machine      | Laptop                          | Usually quick to setup test application             | Low on resources, especially for larger throughput                                  |
-|                     | Server / Cloud Instances        | Higher resources available                          | Slower to install load-testing applications, especially on restrictive environments |
-| Transmission Media  | Wireless Network                | -                                                   | Prone to latency and jitter due to wireless interference and physical factors       |
-|                     | Wired Network/ Cloud Networks   | Low Latency                                         | -                                                                                   |
-| Testing Application | Postman                         | Could be quick to setup test application            | Limit imposed on test volume unless premium version of postman is used              |
-|                     | Open-sourced load-testing Tools | Usually little limits on test throughput and volume | -                                                                                   |
+| Technology Type     | Technology Used                 | Pros                                     | Cons                                                                                |
+| ------------------- | ------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
+| Client Machine      | Laptop                          | Usually quick to setup test application  | Low on resources, hence results may not be accurate                                 |
+|                     | Server / Cloud Instances        | Higher resources available               | Slower to install load-testing applications, especially on restrictive environments |
+| Transmission Media  | Wireless Network                | -                                        | Prone to latency and jitter, hence results may not be accurate                      |
+|                     | Wired Network/ Cloud Networks   | Low Latency                              | -                                                                                   |
+| Testing Application | Postman                         | Could be quick to setup test application | Limit imposed on test volume unless premium version of postman is used              |
+|                     | Open-sourced load-testing Tools | Usually little limits on test throughput | -                                                                                   |
+
+Therefore, the best setup would be carrying out the load-test using a **high performance open-sourced testing tool with servers or cloud instances**.
 
 <br></br>
-Sample codes of how this could be achieved with Artillery is as below. Do note that the following code is for reference only and is not intended for production use.
 
 ## Sample codes of files supporting load-testing using Artillery
+
+Sample codes of how this could be achieved with Artillery is as below. Do note that the following code is for reference only and is not intended for production use.
 
 ```
 ###
@@ -46,7 +49,7 @@ Sample codes of how this could be achieved with Artillery is as below. Do note t
 }
 
 ###
-### test_script.yaml - please insert in your own URL and method
+### test_script.yaml
 ###
 config:
   target: 'https://testing-url'
@@ -94,9 +97,11 @@ const audience = 'https://<< APEX Endpoint >>;
 const contentType = 'application/json';
 
 const subject = 'POST';  // Change this to GET for GET method
-const caPrivateKey = fs.readFileSync('./private.key', 'utf8');
+const algorithm = 'ES256';
+const expiresIn = '180s';
 const contents = fs.readFileSync('./payload.txt', 'utf8').trim();
 const hash = sha256Hash(contents);
+const caPrivateKey = fs.readFileSync('./private.key', 'utf8');
 
 /*
  ***** FUNCTION TO RETURN SHA-256 ENCODING *****
@@ -120,9 +125,9 @@ const importKey = async key => {
  */
 const getJWT = (issuer, subject, keyid, audience, hash, privateKey) => {
   const signOptions = {
-    algorithm: 'ES256',
+    algorithm,
     keyid,
-    expiresIn: '180s',
+    expiresIn,
     jwtid: uuidv4(),
     issuer,
     audience,
@@ -274,13 +279,6 @@ vusers.session_length:
 
 Statistics can be seen in the last batch of testing at 20 TPS for the response time of request (in ms).
 
-From here we can see the important statistics for the response time:
-
-- **Median response time: 90.9ms**
-- **P99 response time: 130.3ms**
-
-Hence effort could be used to troubleshoot and normalize this gap.
-
 ```
 http.response_time:
 min: ......................................................................... 83
@@ -289,3 +287,10 @@ median: ...................................................................... 9
 p95: ......................................................................... 104.6
 p99: ......................................................................... 130.3
 ```
+
+From here we can see the important statistics for the response time:
+
+- **Median response time: 90.9ms**
+- **P99 response time: 130.3ms**
+
+Hence effort could be used to troubleshoot and normalize this gap.
