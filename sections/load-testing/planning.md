@@ -26,9 +26,9 @@ The scope of the test could include the APIs tested, the methods invoked, the ma
 
 It will be good to plan based on the most "heavy-hitting" APIs as well as APIs which cause the most computation on the backend to monitor the performance. Hence, appropriate request parameters and payload should be crafted to test the worst case scenario of heavy computation during.
 
-Ideally the APIs load-tested should not exceed 3-5 seconds at all.
+Ideally the APIs load-tested should not exceed 3-5 seconds.
 
-The availability (based on planned and unplanned downtime) and latency of the API should be published in the documentation or API description as per IM8 (20.1-S1)
+The availability (based on planned and unplanned downtime) and latency of the API must be published in the documentation or API description as per IM standards.
 The latency determined during load-testing can be used as a reference to this.
 
 ## Determining Testing Transactions Per Second
@@ -45,7 +45,7 @@ If there was no precedence and this is an API with limited use, 20tps could be c
 
 The scope of testing, Testing TPS, duration and other details should be coordinated with APEX.
 
-The Testing would be completed with the average, P95, P99, mean latency times and status codes recorded and availability/latency benchmarked.
+The Testing would be completed with the median, P95, P99, mean latency times and status codes recorded and availability/latency benchmarked.
 
 Some sample codes for the load-testing could be found [here](/sections/load-testing/executing).
 
@@ -63,6 +63,6 @@ Do take note of the following status codes relating to errors commonly encounter
 
 Do work on remediating the issue(s) and re-test until the API is producing 100% availability of an acceptable latency within the testing TPS.
 
-The last best working TPS would be configured in the APEX rate limit configurations of the API and the **availability** and **P99 latency** documented in the API description, as per IM requirements.
+The last best working TPS could be considered to be configured in APEX for the API configurations for rate limiting, and the **availability** and **P99 latency** documented in the API description, as per IM requirements.
 
 ?> **Note:** The Rate Limit configurations in APEX could be currently configured using a Service Request.
