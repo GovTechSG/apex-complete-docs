@@ -1,6 +1,10 @@
 # Planning Your End-to-End Load-Test
 
-The planning stage may planned as such:
+## Background
+
+End-to-end load-testing is important to establish an acceptable performance baseline for a new API or an existing API (when there are major version/backend changes).
+
+The planning stage is divided as such:
 
 - Planning When To Perform Load-Testing
 - Inform APEX of Intention To Carry Out Load-Testing
@@ -65,4 +69,4 @@ Do work on remediating the issue(s) and re-test until the API is producing 100% 
 
 The last best working TPS could be considered to be configured in APEX for the API configurations for rate limiting, and the **availability** and **P99 latency** documented in the API description, as per IM requirements. Availibility in this case would be the uptime SLA of the API taking into account the maintenance downtime.
 
-?> **Note:** The Rate Limit configurations in APEX could be currently configured using a Service Request.
+?> **Note:** The Rate-Limiting configurations in APEX could be currently configured using a Service Request.
