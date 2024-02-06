@@ -12,7 +12,7 @@ Be aware of the technologies employed for load-testing in your environment and p
 | ------------------- | ------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | Client Machine      | Laptop                          | Usually quick to setup test application             | Low on resources, especially for larger throughput                                  |
 |                     | Server / Cloud Instances        | Higher resources available                          | Slower to install load-testing applications, especially on restrictive environments |
-| Transmission Media  | Wireless Network                | -                                                   | Prone to latency and due to wireless interference and physical factors              |
+| Transmission Media  | Wireless Network                | -                                                   | Prone to latency and jitter due to wireless interference and physical factors       |
 |                     | Wired Network/ Cloud Networks   | Low Latency                                         | -                                                                                   |
 | Testing Application | Postman                         | Could be quick to setup test application            | Limit imposed on test volume unless premium version of postman is used              |
 |                     | Open-sourced load-testing Tools | Usually little limits on test throughput and volume | -                                                                                   |
