@@ -47,7 +47,7 @@ If there was no precedence and this is an API with limited use, 20tps could be c
 
 ### Actual Testing
 
-The scope of testing, Testing TPS, duration and other details should be coordinated with APEX.
+The scope of testing (API/method), transaction per second (TPS), duration and other details should be coordinated with APEX.
 
 The Testing would be completed with the median, P95, P99, mean latency times and status codes recorded and availability/latency benchmarked.
 
@@ -55,7 +55,7 @@ Some sample codes for the load-testing could be found [here](/sections/load-test
 
 ### Post-Testing Actions
 
-If there are unintended status codes, do troubleshoot the cause of issue, if it was caused by infrastructure, or application or database. A tracing tool or APM would greatly help in this aspect.
+If there are unintended status codes or sub-optimal performance, do troubleshoot the cause of issue, as it could caused by infrastructure, application, or database. A tracing tool or APM would greatly help in this aspect. The StackOps APM could be considered for this.
 
 Do take note of the following status codes relating to errors commonly encountered in a load-test:
 
@@ -67,6 +67,6 @@ Do take note of the following status codes relating to errors commonly encounter
 
 Do work on remediating the issue(s) and re-test until the API is producing 100% availability of an acceptable latency within the testing TPS.
 
-The last best working TPS could be considered to be configured in APEX for the API configurations for rate limiting, and the **availability** and **P99 latency** documented in the API description, as per IM requirements. Availibility in this case would be the uptime SLA of the API taking into account the maintenance downtime.
+The last best working TPS, could be considered to be configured in APEX for the API configurations for rate limiting, and the **availability** and **P99 latency** documented in the API description, as per IM requirements. Availibility in this case would be the uptime SLA of the API.
 
 ?> **Note:** The Rate-Limiting configurations in APEX could be currently configured using a Service Request.

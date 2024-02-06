@@ -97,9 +97,11 @@ const audience = 'https://<< APEX Endpoint >>;
 const contentType = 'application/json';
 
 const subject = 'POST';  // Change this to GET for GET method
-const caPrivateKey = fs.readFileSync('./private.key', 'utf8');
+const algorithm = 'ES256';
+const expiresIn = '180s';
 const contents = fs.readFileSync('./payload.txt', 'utf8').trim();
 const hash = sha256Hash(contents);
+const caPrivateKey = fs.readFileSync('./private.key', 'utf8');
 
 /*
  ***** FUNCTION TO RETURN SHA-256 ENCODING *****
@@ -123,9 +125,9 @@ const importKey = async key => {
  */
 const getJWT = (issuer, subject, keyid, audience, hash, privateKey) => {
   const signOptions = {
-    algorithm: 'ES256',
+    algorithm,
     keyid,
-    expiresIn: '180s',
+    expiresIn,
     jwtid: uuidv4(),
     issuer,
     audience,
