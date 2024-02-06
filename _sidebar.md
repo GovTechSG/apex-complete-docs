@@ -53,6 +53,9 @@ Publishers
   - [Monitoring dashboards](sections/monitoring/dashboards.md)
   - [Real-time dashboard](sections/monitoring/real-time-dashboards.md)
   - [Quarterly and Yearly dashboard](sections/monitoring/quarterly-and-yearly-dashboards.md)
+- Load-Testing APIs
+  - [Planning the load-test](sections/load-testing/planning.md)
+  - [Executing the load-test](sections/load-testing/executing.md)
 
 Support
 
@@ -72,7 +75,6 @@ General
 - Best Practices
   - [Encryption](sections/general/encryption.md)
 - [Network requirements](/sections/general/network-requirements.md)
-
 
 Training
 
