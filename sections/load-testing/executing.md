@@ -26,7 +26,6 @@ Sample codes of how this could be achieved with Artillery is as below. Do note t
 ###
 ### package.json - please use the latest library versions or equivalent libraries
 ###
-
 {
   "name": "artillery",
   "version": "1.0.0",
@@ -49,7 +48,6 @@ Sample codes of how this could be achieved with Artillery is as below. Do note t
 ###
 ### test_script.yaml - please insert in your own URL and method
 ###
-
 config:
   target: 'https://testing-url'
   http:
@@ -82,7 +80,6 @@ scenarios:
 ###
 ### jwt.js - please insert in your own URL, API Key and method
 ###
-
 // DEPENDENCIES
 const crypto = require('crypto');
 const fs = require('fs');
@@ -184,7 +181,6 @@ function logResponse(requestParams, response, context, ee, next) {
 ###
 ### private.key
 ###
-
 << Append private key in PKCS8 format >>
 
 ```
