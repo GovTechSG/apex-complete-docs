@@ -218,7 +218,7 @@ Alternatively, testing can also be done in API Catalog.
 
 Trusted Certificates display the set of certificates to be used for verification of the backend endpoint (the Publisher's API, except for bridging API) during TLS handshake. CA certificates should be automatically uploaded during the setup of the Frontend API.
 
-**Note:** For more information, refer to [List of Trusted Certificate Authorities](/sections/faqs/trusted-cert-authorities.md).
+**Note:** For more information, refer to [List of Trusted Certificate Authorities](/sections/support/trusted-cert-authorities.md).
 
 If the desired root CA certificate corresponding to the backend API  is not listed, you may proceed with the below steps to upload the root CA certificate.
 1. Click **Trusted Certificates** tab.
