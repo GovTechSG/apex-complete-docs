@@ -67,7 +67,7 @@ Configuration of the outbound request settings between the API Gateway and the b
    - [Verify_JWT](#verify-jwt)
    - [Verify_JWT_And_Generate_AWS_SigV4](#verify-jwt-and-generate-aws-sigv4)
 
-   ?> **Note:** The **Advanced** option can be used in situations where additional headers (e.g. client ID and secret) are required.
+   ?> **Note:** The **Advanced** option can be used in situations where additional headers (e.g. client ID and secret) are required. Refer to [Adding custom static headers](#adding-custom-headers).
 
 5. Click **Apply**.
 
@@ -147,7 +147,7 @@ Steps for **Generate AWS SigV4** configuration:
 1. Select **Outbound** tab.
 2. Choose **No Authentication** in **authentication profile**
 3. Select **Generate_AWS_SigV4** in **Request Policy**.
-4. Expand **pre-method override** > Click **(+) sign** > Select **API**.
+4. Expand **Per-Method Override** > Click **(+) sign** > Select **API**.
 5. Click **Edit API Proxy**.
 6. Input the necessary parameters
 
@@ -194,6 +194,28 @@ This policy **combined** both **Verify_JWT** and **Generate_AWS_SigV4** as the a
 **Intranet Environment** : "APEX_Routing" in Default method routing will be used for  bridging APIs Or APEX Cloud Intranet APIs (other organization APIs)
 
 ![apex_routing](./_assets/publish-api/apex_routing.jpg)
+
+### Adding custom headers
+
+Follow these steps to add a custom header:
+
+1. Select **Outbound** tab.
+2. Click the **Advanced** button on the right to configure advanced settings. A Per-Method Override drop down should appear at the bottom of the window. 
+   ![permethodoverride](./_assets/publish-api/header-permethodoverride.png)
+3. Expand **Per-Method Override**, then click the **(+)** sign.
+4. Select your API method to add for configuration.
+5. Click **Edit** under Edit API Proxy to add the configuration. The configuration window is displayed.
+6. Click the **(+)** sign.
+   ![headerconfiguration](./_assets/publish-api/header-configuration.png)
+7. In the **Outbound Parameter** field, add the header name or key.
+8. In the **Outbound Value** field, add any static value.
+
+### Identifying consumer system through application ID
+
+To identify the application consuming your API, you can retrieve the application's ID by adding a custom header. 
+
+- In the **Outbound Parameter** field, enter a header name or key. For example, **client-id**, **app-id**, **consumer-id**.
+- In the **Outbound Value** field, enter **${authentication.subject.id}**.
 
 ## API Method
 
