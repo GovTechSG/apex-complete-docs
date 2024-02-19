@@ -214,8 +214,16 @@ Follow these steps to add a custom header:
 
 To identify the application consuming your API, you can retrieve the application's ID by adding a custom header. 
 
-- In the **Outbound Parameter** field, enter a header name or key. For example, **client-id**, **app-id**, **consumer-id**.
-- In the **Outbound Value** field, enter **${authentication.subject.id}**.
+- In the Outbound Parameter field, enter a header name or key, such as **client-id**, **app-id**, or  **consumer-id**.
+- In the Outbound Value field, enter **${authentication.subject.id}**.
+
+   ![headerconfiguration](./_assets/publish-api/header-client-id.png)
+
+- To verify, we can check the application ID and the new header, **client-id**.
+
+   ![headerconfiguration](./_assets/publish-api/header-app-id.png)
+
+   ![headerconfiguration](./_assets/publish-api/header-app-id-verify.png)
 
 ## API Method
 
