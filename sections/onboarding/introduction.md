@@ -10,7 +10,10 @@ Before onboarding to APEX Cloud, you need to complete the following steps:
 
 ## Subscribe to APEX Cloud
 
-Currently, only API publishers have to pay to use APEX Cloud. Public officers can view [indicative pricing details on GSIB](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/SitePages/APEX-Cloud-Pricing.aspx) (this link is hosted on the intranet).
+Currently, only API publishers have to pay to use APEX Cloud. 
+
+<!-- link no longer available. Public officers can view [indicative pricing details on GSIB](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/SitePages/APEX-Cloud-Pricing.aspx) (this link is hosted on the intranet).
+-->
 
 !> APEX Cloud pricing is still under review and will be free to use until further notice.
 
@@ -25,7 +28,7 @@ To onboard to APEX Cloud and get access to the APEX Cloud portals, a TechPass or
 
 Public Officers and users representing government agencies access APEX Cloud using [TechPass](https://docs.developer.tech.gov.sg/docs/techpass-user-guide/). 
 
-> **Already have a TechPass account?** You can proceed to [log in to the API Manager Portals  as a new user](#verify-your-techpass-account).
+> Note: If you already have a TechPass account, you can proceed to log in to the API Manager Portals  as a new user (step 2).
 
 1. Follow the steps in the [TechPass User Guide](https://docs.developer.tech.gov.sg/docs/techpass-user-guide/onboard-to-techpass) to onboard.
 
