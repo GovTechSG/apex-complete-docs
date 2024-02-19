@@ -219,11 +219,11 @@ To identify the application consuming your API, you can retrieve the application
 
    ![headerconfiguration](./_assets/publish-api/header-client-id.png)
 
-- To verify, we can cross-reference the **application ID** with the new header, **client-id**. They should have the same values.
+   To verify, we can cross-reference the **application ID** with the new header, **client-id**. They should have the same values.
 
    ![headerconfiguration](./_assets/publish-api/header-app-id.png)
 
-   Checking the [API request details](/sections/troubleshooting/api.md):
+   Checking the [API request details](/sections/troubleshooting/api.md) for the **client-id**:
 
    ![headerconfiguration](./_assets/publish-api/header-app-id-verify.png)
 
