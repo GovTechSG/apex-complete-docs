@@ -12,7 +12,7 @@ APEX Supports JWT Authentication as a means to secure the API transaction betwee
 
 ## Prerequisites-API Endpoint URL
 
-The Developer will have to get the API Endpoint URL from the Publisher. This will be the API which the API request is to be made to. (eg. <https://public-stg.api.gov.sg/agency/api>)
+The Developer will have to get the API Endpoint URL from the Publisher. This will be the API which the API request is to be made to. (eg. `https://public-stg.api.gov.sg/agency/api`)
 
 ## Prerequisites-API Key(s)
 
