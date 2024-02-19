@@ -223,6 +223,8 @@ To identify the application consuming your API, you can retrieve the application
 
    ![headerconfiguration](./_assets/publish-api/header-app-id.png)
 
+   Checking the [API request details](/sections/troubleshooting/api.md):
+
    ![headerconfiguration](./_assets/publish-api/header-app-id-verify.png)
 
 ## API Method
