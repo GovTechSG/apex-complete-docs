@@ -19,10 +19,10 @@ The dashboard consists of four panels.
 
 | Panel | Description |
 | --- | --- |
-| **Traffic Summary** | Lists all the Correlation IDs that occurred in a specific time range. The API requests are listed by  Correlation ID. Traffic summary logs are retained for a duration of 1 year. |
-| **Traffic Details - Client to APEX Cloud** | Shows the detailed results of the API request segment between the Client and APEX Cloud (Leg 0). Traffic details logs are retained for a duration of 1 month. |
-| **Traffic Details - APEX Cloud to Endpoint** | Shows the detailed results of the API request segment between APEX Cloud and the endpoint (Leg 1). Traffic details logs are retained for a duration of 1 month. |
-| **Traffic Trace Root Cause** | Shows the trace level for the  queried API. The details provided in this panel are used to debug the API request. Traffic trace logs are retained for a duration of 1 week.
+| **Traffic Summary** | Lists all the Correlation IDs that occurred in a specific time range. The API requests are listed by  Correlation ID. <br><br>Traffic summary logs are retained for a duration of 365 days. |
+| **Traffic Details - Client to APEX Cloud** | Shows the detailed results of the API request segment between the Client and APEX Cloud (Leg 0).<br><br>Traffic details logs are retained for a duration of 30 days. |
+| **Traffic Details - APEX Cloud to Endpoint** | Shows the detailed results of the API request segment between APEX Cloud and the endpoint (Leg 1). <br><br>Traffic details logs are retained for a duration of 30 days. |
+| **Traffic Trace Root Cause** | Shows the trace level for the  queried API. The details provided in this panel are used to debug the API request. <br><br>Traffic trace logs are retained for a duration of 7 days.
 
 ## 1. Identify the issue
 
@@ -68,6 +68,8 @@ The dashboard consists of four panels.
 
 2. Browse through the list of API requests in the Traffic Summary panel, and copy the **Correlation ID** of the problematic request.
 
+    > **Note:** These logs are retained for a duration of 365 days.
+
     ![copy correlation ID](./_assets/dashboard-correlationid.png)
 
     > **Note:** You can also hover over the Correlation ID entry and  click the (**+**) icon to filter the results by that value.
@@ -103,7 +105,7 @@ To debug the issue, check the Traffic Details of the correlation ID. Follow thes
 ### Panel 1: Client to APEX Cloud
 
 This panel helps you determine if the issue occurs in the Client to APEX Cloud segment of the request (Leg 0).
-<br><br>
+> **Note:** These logs are retained for a duration of 30 days.
 
 ![client-to-apex](./_assets/trafficdetails-clienttoapex.png)
 
@@ -123,7 +125,10 @@ Check the following parameters to troubleshoot the issue:
 
 ### Panel 2: APEX Cloud to Endpoint
 
-Use this panel to determine whether an API request is experiencing failure on the APEX Cloud to Endpoint segment of the request (Leg 1).<br><br>
+Use this panel to determine whether an API request is experiencing failure on the APEX Cloud to Endpoint segment of the request (Leg 1).
+
+> **Note:** These logs are retained for a duration of 30 days.
+
 ![apex-to-endpoint](./_assets/trafficdetails-apextoendpoint-2.png)
 
 Check the **HTTP response** displayed in the Received Header column. This is the response received from the backend.
@@ -133,6 +138,8 @@ In the example above, the response is `HTTP/1.1 404 Not Found`. This indicates t
 ###  Panel 3: Traffic Trace Root Cause
 
  Use this panel to check the log details in the **message** column and get more insight on the cause of the issue.
+
+ > **Note:** These logs are retained for a duration of 7 days.
 
 ![traffic-trace-message](./_assets/dashboard-trace-error.png)
 

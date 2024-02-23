@@ -16,7 +16,7 @@ Developers
   - [Creating/Editing an application](sections/consuming/create-application.md)
   - [Generating API Keys](sections/consuming/api-keys.md)
   - [Subscribing to APIs](sections/consuming/subscribe-api.md)
-- Consuming APIs with OAuth 2.1
+- Consuming OAuth 2.1 APIs
   - [Introduction](sections/oauth/introduction.md)
   - [Nomenclature of Consumer Guide](sections/oauth/nomenclature.md)
   - [Onboarding and Setup](sections/oauth/onboarding.md)
@@ -25,7 +25,7 @@ Developers
   - [Implementing the Authorization Code Flow](sections/oauth/authz-token.md)
   - [Testing Business API](sections/oauth/api-test.md)
   - [Sample Codes](sections/oauth/sample-codes.md)
-- Consuming APIs with JWT Auth
+- Consuming JWT Auth APIs
   - [Introduction](sections/auth/introduction.md)
   - [Understanding JWT](sections/auth/jwt.md)
   - [Visualizing JWT flow in APEX](sections/auth/jwt-flow.md)
@@ -75,6 +75,7 @@ General
 - Best Practices
   - [Encryption](sections/general/encryption.md)
 - [Network requirements](/sections/general/network-requirements.md)
+- [Roadmap](/sections/general/roadmap.md)
 
 Training
 
