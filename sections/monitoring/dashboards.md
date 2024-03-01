@@ -19,9 +19,9 @@ To view the dashboards, follow these steps:
    - Staging: [go.gov.sg/apex-report-stg](https://go.gov.sg/apex-report-stg)
 
 2. Log in with Elasticsearch. Contact your agency POC to obtain your local account credentials.
-<!-- 
-2. Log in with [TechPass](sections/onboarding/techpass). The Elastic Cloud dashboard is displayed.
--->
+
+<!-- 2. Log in with [TechPass](sections/onboarding/techpass). The Elastic Cloud dashboard is displayed.-->
+
 3. From the Spaces menu in the dashboard, select your project space.
 
 4. From the main menu, go to the Analytics category and click **Dashboard**. A list of available dashboards are displayed in the Dashboards page.
