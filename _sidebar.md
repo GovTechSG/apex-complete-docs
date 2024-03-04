@@ -2,6 +2,8 @@ Getting Started
 
 - Overview
   - [Introduction](sections/home.md)
+  - [Specifications](/sections/general/specifications.md)
+  - [Roadmap](/sections/general/roadmap.md)
 - Onboard to APEX
   - [Pre-onboarding](sections/onboarding/introduction.md)
   - [Onboard as a Publisher](/sections/onboarding/publisher-onboarding.md)
@@ -75,7 +77,6 @@ General
 - Best Practices
   - [Encryption](sections/general/encryption.md)
 - [Network requirements](/sections/general/network-requirements.md)
-- [Roadmap](/sections/general/roadmap.md)
 
 Training
 
