@@ -4,7 +4,9 @@ This user guide is intended for API Publishers and Developers (Consumers) who wa
 
 Use the navigation menu on the left to browse the documentation and learn more about APEX Cloud and its features.
 
-## API Manager Portal
+## Quick links
+
+### API Manager Portal
 
 Public Officers use the API Manager Portal to create and manage APIs and API access. Log in to the API Manager Portal environments using your TechPass account.
 
@@ -15,7 +17,7 @@ Public Officers use the API Manager Portal to create and manage APIs and API acc
 
 ?> **Note:** Once logged in, ensure that you switch to the correct **Organization** to view and manage the APIs or applications available to your organization.
 
-## API Developer Portal
+### API Developer Portal
 
 Non-Public Officers use the API Developer Portal to browse available APIs in APEX Cloud and create applications to consume these APIs. Log in to the [API Developer Portal](https://www.api.developer.tech.gov.sg
 ) using your CorpPass account.

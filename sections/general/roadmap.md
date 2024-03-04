@@ -1,4 +1,6 @@
-# APEX Cloud Roadmap
+# Product Roadmap
+
+The table below outlines the APEX Cloud roadmap spanning from FY23 Q4 to FY24 Q4.
 
 | Objective | FY23 Q4 | FY24 Q1 | FY24 Q2 | FY24 Q3 | FY24 Q4 |
 |---|---|---|---|---|---|
