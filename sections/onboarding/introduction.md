@@ -10,10 +10,7 @@ Before onboarding to APEX Cloud, you need to complete the following steps:
 
 ## Subscribe to APEX Cloud
 
-Currently, only API publishers have to pay to use APEX Cloud. 
-
-<!-- link no longer available. Public officers can view [indicative pricing details on GSIB](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/SitePages/APEX-Cloud-Pricing.aspx) (this link is hosted on the intranet).
--->
+Currently, only API publishers have to pay to use APEX Cloud. Public officers can view [indicative pricing details on GSIB](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/SitePages/APEX-Cloud-Pricing.aspx) (this link is hosted on the intranet).
 
 !> APEX Cloud pricing is still under review and will be free to use until further notice.
 
