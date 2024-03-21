@@ -32,7 +32,7 @@ If you encounter errors during the JWT authentication process, refer to the tabl
 
 ### Authentication errors
 
-| Error Code | Error Name   | Error Desccription                     |
+| Error Code | Error Name   | Error Description                     |
 | ---------- | ------------ | -------------------------------------- | ------------------------------------------------------------------------------- | --- |
 | 450        | Client Error | Authentication Error - Invalid API Key | 450 Authentication Error - Invalid API Key                                      |     |
 | 452        | Client Error | Authentication Error - Signature       | 452 Authentication Error - JWT Signature. Ensure JWT is signed with correct key |     |
