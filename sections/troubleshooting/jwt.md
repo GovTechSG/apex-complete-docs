@@ -26,16 +26,16 @@ If you encounter errors during the JWT authentication process, refer to the tabl
 | 441        | Client Error | Missing ‘iat’ claim.                                                                             | 441<br>Invalid JWT format. Please ensure that iat claim is valid.                                                                       |                                                                                          |
 | 442        | Client Error | Missing ‘aud’ claim.                                                                             | 442<br>Invalid JWT format. Please ensure that aud claim is valid.                                                                       |                                                                                          |
 | 443        | Client Error | Missing ‘jti’ claim.                                                                             | 443                                                                                                                                     |                                                                                          |
-| 445        | Client Error | Missing ‘sub’ claim.                                                                             | 445 - Invalid JWT format. Please ensure that sub claim is valid.                                                                        |                                                                                          |
-| 446        | Client Error | Missing data hash claim.                                                                         | 446 - Invalid JWT format. Please ensure that data claim is valid.                                                                       |                                                                                          |
-| 447        | Client Error | Missing ‘exp’ claim.                                                                             | 447 - Invalid exp claim. Please ensure that exp claim exists and JWT is not expired.                                                    |
+| 445        | Client Error | Missing ‘sub’ claim.                                                                             | 445<br>Invalid JWT format. Please ensure that sub claim is valid.                                                                        |                                                                                          |
+| 446        | Client Error | Missing data hash claim.                                                                         | 446<br>Invalid JWT format. Please ensure that data claim is valid.                                                                       |                                                                                          |
+| 447        | Client Error | Missing ‘exp’ claim.                                                                             | 447<br>Invalid exp claim. Please ensure that exp claim exists and JWT is not expired.                                                    |
 
 ### Authentication errors
 
-| Error Code | Error Name   | Error Description                     |
-| ---------- | ------------ | -------------------------------------- | ------------------------------------------------------------------------------- | --- |
-| 450        | Client Error | Authentication Error - Invalid API Key | 450 Authentication Error - Invalid API Key                                      |     |
-| 452        | Client Error | Authentication Error - Signature       | 452 Authentication Error - JWT Signature. Ensure JWT is signed with correct key |     |
+| Error Code | Error Name   | Error Description                      |
+| ---------- | ------------ | -------------------------------------- |
+| 450        | Client Error | Authentication Error - Invalid API Key |
+| 452        | Client Error | Authentication Error - Signature       |
 
 ## Common Issues / FAQs
 
