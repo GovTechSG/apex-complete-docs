@@ -63,6 +63,7 @@ Support
 
 - Troubleshooting
   - [Introduction](sections/troubleshooting/introduction.md)
+  - [APEX Error Codes](sections/troubleshooting/apex-error-codes.md)
   - [Debugging API requests](sections/troubleshooting/api.md)
   - [Debugging JWT authentications](sections/troubleshooting/jwt.md)
   - [Debugging network connectivity](sections/troubleshooting/network.md)
